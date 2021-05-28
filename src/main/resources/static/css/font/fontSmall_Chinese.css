@@ -1,0 +1,38 @@
+.expand {
+	margin-left: 219px;
+	width: 751px ;
+}
+
+
+h2 .ui-fullsize .ui-btn-inner
+{
+	font-size: 22px;
+}
+
+.ui-popup .ui-title,
+input.ui-input-text,
+label.ui-input-text,
+.ui-btn-inner,
+h3 .ui-fullsize .ui-btn-inner
+{
+	font-size: 16px;
+}
+
+.err-msg,
+.ui-collapsible-content
+{
+	font-size: 14px;
+}
+
+.pwStrength, #pwStrengthL, #pwStrengthM, #pwStrengthH {
+    font-size: 13px;
+}
+
+.submitShortBtn0, .submitShortBtn {
+	padding-bottom: 1px;
+}
+
+
+.searchField{
+	padding-bottom: 12px \9;
+}

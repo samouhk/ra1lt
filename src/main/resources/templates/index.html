@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+ <html xmlns="http://www.w3.org/1999/xhtml" 
+       xmlns:th="http://www.thymeleaf.org" 
+       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head> 
+	<link rel="icon" type="image/x-icon" href="images/mygovhk/common/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/mygovhk/common/favicon.ico">
+	<title>RA1 - Edit Personal Information  - Address Type</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+	<script src="js/jquery-1.9.1.min.js"></script> 	 	      	  	  	
+    <script type="text/javascript">
+	//<![CDATA[
+		
+		var expandMessage = "";
+		var collapseMessage = "";
+	//]]>	
+	</script>
+	<script src="js/system.js"></script>  
+	<script src="js/util.js"></script>
+	<script type="text/javascript">
+    //<![CDATA[
+        var MAVersion ='201907161638';
+		var localeCode = 'en';
+		var largeFontSizeTxt="<span class=\"access\">Text Size: Larger(</span>A+<span class=\"access\">)</span>";
+		var defaultFontSizeTxt="<span class=\"access\">Text Size: Default Size(</span>A-<span class=\"access\">)</span>";
+		var touchStartEnable = false ;	
+		var defaultFont='Text Size: Default Size';
+		var largeFont='Text Size: Larger';
+    //]]> 
+   	</script>
+  	
+	<script src="js/editAddressTemp.js"></script>
+	    
+  	<link type="text/css" rel="stylesheet" href="css/editAddressTemp.css">
+	<link type="text/css" rel="stylesheet" href="css/errorMsg.css">
+	<link type="text/css" rel="stylesheet" href="css/editAddressUtility.css">
+	
+	<script src="js/editAddressUtility.js"></script>
+	
+</head>
+
+	</script><link href="css/fontSmall.css" rel="stylesheet" type="text/css"></head><body class="en">
+	<div class="access icon-loading"></div>
+	<div class="ui-loader-background"><div class="icon-loading"></div></div>
+	<div data-role="page" class="pages" id="home"><div id="pageContainer">
+<form id="myfm" name="myfm" method="Get" th:action="@{/}" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="myfm" value="myfm">
+
+		<a href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/" id="jtcEAS" data-ajax="false" class="access" style="margin:0 30px 30px 0">main content</a>
+		<div class="top-heading">					
+			<div id="branding">
+				<div id="mygovhklogo">
+					 <div class="header-logo-container" title="RA1 - Edit Personal Information  Logo"></div>	
+					 <div class="header-title"><span class="header-title-grey">Edit</span><span class="header-title-orange">Personal Information </span></div>							
+					 <div class="clear"></div>
+				</div>
+			</div>									
+			<div id="top-tool-bar">
+				<div class="floatedWrapper" id="ttb-container">
+					<ul role="navigation" id="lang">
+						<li>
+							<a id="fontSize" class="alink" data-ajax="false" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg" onclick="javascript:fontSizeOnClick();" title="Text Size: Larger"><span class="access">Text Size: Larger(</span>A+<span class="access">)</span></a>
+						</li>
+						
+						<li>
+							<a id="addressLookUp" class="alink" data-ajax="false" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/addressLookup" title="Address Look Up">
+								<span class="access">Address Look Up(</span>
+								Address Look Up
+								<span class="access">)</span>
+							</a>
+						</li>
+						
+	                    <li> 
+	                    </li>
+											                    
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="content_container">
+		<div role="main" id="content" class="box">
+			<div id="announcement">
+				<div class="createAcctHeading">
+					<h1 class="h1-title-edit">RA1 - Edit Personal Information </h1>
+				</div>		
+			</div>
+			
+			<div class="ui-formfield-br">
+			
+				<div class="edit-field">
+					<div class="ui-input-text" style="padding-left: 10px">
+						<strong>Name </strong>		
+<!-- 						<div><p th:text="${name}" /></div>				 -->
+					</div>
+					<div class="ui-input-text input-margin">
+						<input id="clientName" type="text" name="clientName" autocomplete="off" class="ui-body-g " maxlength="250">
+					</div>
+				</div>
+				
+				<div class="edit-field">
+					<div class="ui-input-text" style="padding-left: 10px">
+						<strong>Phone No. </strong>						
+					</div>
+					<div class="ui-input-text input-margin">
+						<input id="clientPhone" type="text" name="clientPhone" autocomplete="off" class="ui-body-g " maxlength="250">
+					</div>
+				</div>
+			
+				<div class="ui-inline">
+					<div class="ui-input-text" style="padding-left: 10px">
+							<strong>Address Type</strong>						
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div id="reasonDelete" class="ui-inline-end">
+						<div style="margin-bottom: 4px; padding-left: 30px; line-height: 20px">
+							<div style="width: 30px; position:absolute"><span id="whyInd_1" class="mySetting-radio-on"></span>
+								<div class="hiddenProccessField">
+									<input type="radio" name="whyIndHidden" id="whyInd_1_Hidden" value="1" onkeypress="return noEnter(event)">
+								</div>
+							</div>
+							<div style="margin-left: 30px">
+								<label for="whyInd_1_Hidden">In Hong Kong</label>
+							</div>
+						</div>
+						<div style="margin-bottom: 4px; padding-left: 30px; line-height: 20px">
+							<div style="width: 30px; position:absolute"><span id="whyInd_2" class="mySetting-radio-off"></span>
+								<div class="hiddenProccessField">
+									<input type="radio" name="whyIndHidden" id="whyInd_2_Hidden" value="2" onkeypress="return noEnter(event)">
+								</div>
+							</div>
+							<div style="margin-left: 30px">
+								<label for="whyInd_2_Hidden">Outside Hong Kong</label>
+							</div>
+						</div>
+						<div style="margin-bottom: 4px; padding-left: 30px; line-height: 20px">
+							<div style="width: 30px; position:absolute"><span id="whyInd_3" class="mySetting-radio-off"></span>
+								<div class="hiddenProccessField">
+									<input type="radio" name="whyIndHidden" id="whyInd_3_Hidden" value="3" onkeypress="return noEnter(event)">
+								</div>
+							</div>
+							<div style="margin-left: 30px">
+								<label for="whyInd_3_Hidden">P.O. Box</label>
+							</div>
+						</div>
+											
+					<div class="floatLeft">
+						<input id="submitBtn1" type="submit" name="submitBtn1" value="Continue" title="Continue" class="submitShortBtn0">
+					</div> 
+					<div class="floatLeft">
+						<input id="cancelBtn" type="button" name="cancelBtn" value="Cancel" title="Cancel" class="submitShortBtn0" onclick="window.location.href='http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/'">
+					</div>
+				
+					<div class="clear"></div>
+					<div class="submitShortBtn0_focus access"></div>
+				</div>
+			</div>
+		</div><input id="addressType" type="hidden" name="addressType" value="HK">
+			<br>	
+		</div>
+		
+		<div id="footerbox">
+			<div class="hr"></div>
+		
+			<div class="icon-container">
+			
+				<div class="eastable" style="width: 100%;"><div class="eastbody"><div class="eastr">
+				
+				<div class="eastd" style="width:100px;vertical-align:middle;text-align:left;"> 
+					<div id="w3" class="footer-w3c">
+						<a title="WCAG 2.0 Level Double-A Conformance" id="w3cLink" href="http://www.w3.org/WAI/WCAG2AA-Conformance" rel="external" target="_blank">
+		    			</a>
+					</div>
+				</div>
+				<div class="eastd" style="vertical-align:middle;text-align:left;">
+				    <a href="http://www.webforall.gov.hk/recognition_scheme" id="_footer_slogan" rel="external" target="_blank">
+					   <img id="WebAccessibility-img" style="border-top-width:0px;border-top-style:none;border-right-width:0px;border-right-style:none;border-bottom-width:0px;border-bottom-style:none;border-left-width:0px;border-left-style:none;" class="footer-webaccessibility" title="Web Accessibility Recognition Scheme" alt="Web Accessibility Recognition Scheme" src="/images/mygovhk/common/WARS_2014_Web_Gold_wSolgan_en.png">
+				    </a>
+				</div>
+				
+				<div class="eastd" style="vertical-align:middle;text-align:right;">
+					<div id="brandhk" class="footer-brandhk">
+						<a title="Brand Hong Kong" id="brandhkLink" href="http://mobile.brandhk.gov.hk/" rel="external" target="_blank">
+		    			</a>
+					</div>
+				</div>	
+				
+				</div></div></div>
+			</div>
+		</div>	
+		
+		<script>
+ 			$(document).ready(function(){
+ 				loadEASFont();
+ 			});
+		</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="328641582796821160:-5785487803209846383" autocomplete="off">
+</form></div></div>
+</body></html>
+
+
+
+
+
+
+
+
+
+<!-- <body> -->
+<!-- 	<div> -->
+<!-- 		<table border=1> -->
+<!-- 			<tr> -->
+<!-- 				<td> -->
+<!-- 					<div>Name:</div> -->
+<!-- 				</td> -->
+<!-- 				<td> -->
+<!-- 					<div><p th:text="${name}" /></div> -->
+<!-- 				</td> -->
+<!-- 			</tr> -->
+<!-- 			<tr> -->
+<!-- 				<td> -->
+<!-- 					<div>Phone No.:</div> -->
+<!-- 				</td> -->
+<!-- 				<td> -->
+<!-- 					<div><p th:text="${phoneNo}" /></div> -->
+<!-- 				</td> -->
+<!-- 			</tr> -->
+<!-- 		</table> -->
+<!-- 	</div> -->
+<!-- 	<form action="/search"> -->
+<!-- 		<input type="submit" value="Submit"> -->
+<!-- 	</form> -->
+<!-- </body> -->
+<!-- </html> -->

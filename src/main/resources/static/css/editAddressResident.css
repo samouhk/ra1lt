@@ -1,0 +1,420 @@
+.search-field {
+	position: relative;
+}
+
+.table {
+	position: absolute;
+	background: white;
+	z-index: 1;
+	left: 15px;
+	border: 1px solid;
+	cursor: default;
+	z-index: 111;
+	display: none;
+}
+
+.tr-row {
+	/*border-bottom: 1px solid;*/
+	
+}
+
+.table .td {
+	padding-bottom: 7px;
+}
+
+.table .td.end {
+	padding-bottom: 0px;
+}
+
+#street_ajax_table .selected, #building_ajax_table .selected,
+	#estate_ajax_table .selected {
+	background-color: gray;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.mySetting-radio-on {
+	background-image: url("../images/mygovhk/common/radiobtn_on.png");
+	width: 20px;
+	height: 20px;
+	background-size: 15pt auto;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.mySetting-radio-off {
+	background-image: url("../images/mygovhk/common/radiobtn_off.png");
+	width: 20px;
+	height: 20px;
+	background-size: 15pt auto;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.h1-title-edit {
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: bold;
+	line-height: 42px;
+}
+
+.hiddenProccessField {
+	position: absolute;
+	left: -10000px;
+	clip: rect(0px, 0px, 0px, 0px);
+}
+
+#content {
+	/* height: 1600px; */
+	overflow-y: hidden;
+}
+
+.dropdown-whiteTitle {
+	display: none;
+}
+
+.dropdownWrapper {
+	margin-bottom: 0px;
+}
+
+.field-label-end {
+	clear: both;
+	margin-bottom: 4px;
+}
+
+.field-label {
+	margin-bottom: 4px;
+}
+
+.ui-formfield-br {
+	padding: 10px 0px 5px 0px;
+}
+
+.edit-field {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.actionContent {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+div.ui-input-text input.ui-body-g:focus, div.ui-input-text input.ui-body-g:hover,
+	.table:hover {
+	width: 310px;
+	min-width: 310px;
+}
+
+div.ui-input-text input.ui-body-g, .table {
+	width: 310px;
+	min-width: 310px;
+}
+
+/*DropDown*/
+.selectionDropDown {
+	overflow: hidden;
+	position: relative;
+	width: 35%;
+	z-index: 1;
+	background: url("../images/mygovhk/mySettings/btn_dropdown_04.png")
+		repeat-x scroll 0 0 #EFEFEF;
+	border: 1px solid #A9A9A9;
+	border-radius: 20px 20px 20px 20px;
+	min-height: 43px;
+	min-width: 320px;
+}
+
+.selectionDropDown div {
+	background: none repeat scroll 0 0 transparent;
+	margin-left: 15px;
+	margin-top: 10px;
+	opacity: 1;
+	overflow: hidden;
+	z-index: 1;
+	line-height: 24px;
+	padding-right: 46px;
+	width: 270px;
+}
+
+.specail_DropDown div {
+	background: none repeat scroll 0 0 transparent;
+	margin-left: 15px;
+	margin-top: 10px;
+	opacity: 1;
+	overflow: hidden;
+	z-index: 1;
+	line-height: 24px;
+	padding-right: 46px;
+	width: 130px;
+}
+
+.selectionDropDown span, .specail_DropDown span {
+	background: url("../images/mygovhk/mySettings/icon_down1.png") no-repeat
+		scroll 7px center transparent;
+	border-left: 1px solid #D2D2D2;
+	position: absolute;
+	height: 100%;
+	overflow: hidden;
+	width: 30px;
+	right: 15px;
+	top: 0;
+}
+
+.selectionDropDown select, .specail_DropDown select {
+	border: none;
+	height: inherit;
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+	cursor: pointer;
+	min-height: 100%;
+	min-width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: none repeat scroll 0 0 white;
+	opacity: 0;
+	-ms-filter: ��alpha(opacity = 0);
+	filter: alpha(opacity = 0);
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+	font-size: inherit;
+}
+
+.focusOutline {
+	outline: 1px solid #4D90FE;
+}
+
+.focusBorder {
+	border: 1px solid #4D90FE !important;
+}
+
+/*edit address style dropdown*/
+.editAddressDropDown_container {
+	/*	padding: 0 8px 0 .4em;*/
+	
+}
+
+.editAddressDropDown {
+	margin-left: 0;
+	margin: 15px 0;
+	height: 44px;
+	background: #EFEFEF
+		url('../images/mygovhk/registration/btn_dropdown_03.png') repeat-x;
+	border: 1px solid #A9A9A9;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-webkit-border-top-left-radius: 20px;
+	border-radius: 20px;
+	width: 35%;
+	min-width: 320px;
+}
+
+.editAddressWidth {
+	width: 88%;
+}
+
+.editAddressDropDownContainer {
+	width: inherit;
+	text-align: center;
+	text-indent: 0;
+	background-color: #FFF;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C0C0C0 #D9D9D9 #D9D9D9;
+	border-radius: 18px;
+	margin: 6px 0 0 8px;
+}
+
+.editAddressDropDownTxt {
+	padding-right: 0;
+	padding-left: 0;
+	border: 0;
+	text-align: center;
+	height: 27px;
+	line-height: 27px;
+	font-size: 16px !important;
+	background-color: transparent;
+}
+
+.address {
+	width: 44%;
+}
+
+.iconDropDown {
+	margin: 0 auto;
+	min-height: 43px;
+	background: none repeat scroll 0 0 transparent;
+	height: 43px;
+	min-height: 43px;
+	overflow: hidden;
+	position: relative;
+	width: 25px;
+	z-index: 1;
+}
+
+.iconDropDown span {
+	margin-top: 10px;
+	background: url("../images/mygovhk/registration/icon_down1.png")
+		no-repeat scroll 0 center transparent;
+	height: 25px;
+	min-height: 25px;
+	min-width: 25px;
+	overflow: hidden;
+	position: absolute;
+	width: 25px;
+}
+
+.iconDropDown select {
+	border: none;
+	height: inherit;
+	width: auto;
+	left: 0;
+	margin: 0;
+	top: 0;
+	position: relative;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: none repeat scroll 0 0 white;
+	opacity: 0;
+	-ms-filter: ��alpha(opacity = 0) ��; /* ie 8 */
+	filter: alpha(opacity = 0); /* ie lt 7 */
+	-khtml-opacity: 0; /* safari 1.x */
+	-moz-opacity: 0; /* ff lt 1.5, netscape */
+	min-height: inherit;
+	min-width: inherit;
+	z-index: 3;
+}
+
+/*lot*/
+.lot {
+	display: none;
+}
+
+.lotStyle {
+	float: left;
+}
+
+.lotSeperator {
+	float: left;
+}
+
+.specail_DropDown {
+	float: left;
+	width: 230px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	background: url("../images/mygovhk/mySettings/btn_dropdown_04.png")
+		repeat-x scroll 0 0 #EFEFEF;
+	border: 1px solid #A9A9A9;
+	border-radius: 20px 20px 20px 20px;
+	min-height: 43px;
+}
+
+/* .speacail_input_eng{
+					float: right;
+					width: 88px;
+					padding: 0 0px 0 5px !important
+					}
+					
+					.speacail_input_chi{
+					float: left;
+					width: 88px;
+					padding: 0 10px 0 0px !important;
+					} */
+.en .specail_DropDown {
+	width: 200px;
+	position: absolute;
+	top: 0;
+}
+
+.chi .specail_DropDown {
+	width: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.speacail_input_eng {
+	padding: 0 0px 0 205px !important;
+	margin-right: 25px !important;
+}
+
+.speacail_input_chi {
+	padding: 0 205px 0 0px !important;
+	margin-right: 25px !important;
+}
+
+.speacail_ui_body {
+	width: 100%;
+	background-color: #FFFFFF;
+	border-color: #C0C0C0 #D9D9D9 #D9D9D9;
+	border-radius: 18px 18px 18px 18px;
+	border-style: solid;
+	border-width: 1px;
+	height: 27px;
+	line-height: 27px;
+	padding: 0.4em 10px;
+}
+
+.blockUnitContainer {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	max-width: 330px;
+	/* max-width: 330px;
+					
+					min-width:320px; */
+}
+
+div.ui-input-text input.speacail_ui_body:focus, div.ui-input-text input.speacail_ui_body:hover
+	{
+	background-color: #FFFFFF;
+	border-color: #4D90FE !important;
+	border-radius: 18px 18px 18px 18px;
+	border-style: solid;
+	border-width: 1px;
+	height: 27px;
+	line-height: 27px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) , only screen and
+		(min-device-pixel-ratio : 1.5) , only screen and
+		(min--moz-device-pixel-ratio : 1.5) , only screen and
+		(-o-min-device-pixel-ratio: 3/2) , only screen and (min-resolution:
+	1.5dppx) {
+	.selectionDropDown, div.ui-input-text input.ui-body-g:focus, div.ui-input-text input.ui-body-g:hover,
+		div.ui-input-text input.ui-body-g, .editAddressDropDown {
+		width: 100%;
+		min-width: 0px;
+	}
+	.lotStyle {
+		width: 100%;
+	}
+	.selectionDropDown div {
+		width: 78%;
+	}
+	.blockUnitContainer {
+		max-width: inherit;
+	}
+	.table {
+		min-width: 0px !important;
+		width: 260px !important;
+	}
+}

@@ -1,0 +1,235 @@
+.floatLeft {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.h1-title-edit {
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: bold;
+	line-height: 42px;
+}
+
+.ui-input-search, div.ui-input-text {
+	margin-bottom: 10px;
+}
+
+#structuredAddress, #freeFormatAddress {
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+}
+
+.reminder {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background: #e6e6e6;
+	padding: 15px 0px;
+	margin: 16px 0px;
+	display: inline-block;
+	width: 100%;
+}
+
+.searchBtn {
+	background: url(../images/mygovhk/myOnlineServices/textfield_search.png)
+		0 0 no-repeat;
+	background-size: 54px 42px;
+	width: 54px;
+	height: 42px;
+	position: absolute;
+	right: -2px;
+	top: 10px;
+	cursor: pointer;
+	border: none;
+}
+
+.searchBtn:hover, .searchBtn:focus, .searchBtn_hover {
+	background:
+		url(../images/mygovhk/myOnlineServices/textfield_search_over.png) 0 0
+		no-repeat;
+}
+
+.search {
+	padding-right: 80px;
+	position: relative;
+}
+
+.searchField {
+	background-color: #FFF;
+	/* height:20px; */
+	line-height: 1.25em;
+	width: 100%;
+	-webkit-border-bottom-right-radius: 18px;
+	-webkit-border-bottom-left-radius: 18px;
+	-webkit-border-top-right-radius: 18px;
+	-webkit-border-top-left-radius: 18px;
+	border-radius: 18px;
+	-webkit-box-shadow: none;
+	border-color: silver;
+	border-style: solid;
+	border-width: 1px;
+	margin: 10px 0;
+	padding: 10px 70px 10px 10px;
+}
+
+.searchField::-webkit-input-placeholder {
+	padding: auto 70px auto 10px;
+}
+
+.searchField:focus /**,.loginField:focus**/ {
+	border-color: #4D90FE;
+}
+
+.searchField:hover {
+	border-color: #A0A0A0;
+}
+
+.search_image {
+	background: url(../images/mygovhk/myOnlineServices/textfield_search.png)
+		0 0 no-repeat;
+	background-size: 24px 18px;
+	width: 27px;
+	height: 18px;
+	display: inline-block;
+}
+
+.clearSearch {
+	background: url(../images/mygovhk/myOnlineServices/textfield_delete.png)
+		no-repeat scroll center center transparent;
+	height: 100%;
+	position: absolute;
+	width: 30px;
+	right: 60px;
+	top: 0;
+	cursor: pointer;
+	display: none;
+	border: 0;
+}
+
+/*
+	.result_format{
+		border-bottom-style: dashed;
+		border-bottom-width: 1px;
+		padding: 7px 0px;
+	}
+	
+	.result{
+		border: 1px solid;
+		padding: 0px 5px 10px 5px;
+		background-color: rgb(221, 255, 255);
+	}
+	
+	.result_title{
+		
+	}
+	
+	.result a{
+		color:#E57100;
+		text-decoration: none !important;
+		cursor: pointer;
+	}
+	
+	.result a:hover,.result a:focus,.result a:active{
+		text-decoration: underline !important;
+	}
+	
+
+	*/
+.reminder a {
+	color: #E57100;
+}
+
+.reminder a:hover, .reminder a:active, .reminder a:focus {
+	color: #2d69c1;
+}
+
+.radio-on {
+	background-image: url("../images/mygovhk/common/radiobtn_on.png");
+	width: 20px;
+	height: 20px;
+	background-size: 15pt auto;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.radio-off {
+	background-image: url("../images/mygovhk/common/radiobtn_off.png");
+	width: 20px;
+	height: 20px;
+	background-size: 15pt auto;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.h1-title-edit {
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: bold;
+	line-height: 42px;
+}
+
+.hiddenProccessField {
+	position: absolute;
+	left: -10000px;
+	clip: rect(0px, 0px, 0px, 0px);
+}
+
+.focusOutline {
+	outline: 1px solid #4D90FE;
+}
+
+.focusBorder {
+	border: 1px solid #4D90FE !important;
+}
+
+.radio_div {
+	padding: 20px 0 20px 0px;
+	border-bottom: 1px solid #CCCCCC;
+	display: inline-block;
+	width: 100%;
+}
+
+.select_method {
+	padding: 20px 0 20px 0px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.radioContainer, .radioLblContainer {
+	float: left;
+}
+
+.radioLblContainer {
+	padding-left: 15px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) , only screen and
+		(min-device-pixel-ratio : 1.5) , only screen and
+		(min--moz-device-pixel-ratio : 1.5) , only screen and
+		(-o-min-device-pixel-ratio: 3/2) , only screen and (min-resolution:
+	1.5dppx) {
+	.clearSearch {
+		background:
+			url(../images/mygovhk/myOnlineServices/textfield_delete@2x.png)
+			no-repeat scroll center center transparent;
+		background-size: 30px 30px;
+	}
+	.searchBtn {
+		background:
+			url(../images/mygovhk/myOnlineServices/textfield_search@2x.png) 0 0
+			no-repeat;
+		background-size: 54px 42px;
+	}
+	.searchBtn:hover {
+		background:
+			url(../images/mygovhk/myOnlineServices/textfield_search_over@2x.png)
+			0 0 no-repeat;
+		background-size: 54px 42px;
+	}
+	.radioLblContainer {
+		width: 85%;
+	}
+}

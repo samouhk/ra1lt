@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://ra1.caas.gcisdctr.hksarg/caasra1/acknowledgment.xhtml?faces-redirect=true -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head id="j_idt2"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<link rel="icon" type="image/x-icon" href="images/mygovhk/common/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="images/mygovhk/common/favicon.ico">
+	<title>
+	RA1 - Edit Personal Information  – Confirm
+	</title>
+
+	<script src="js/jquery-1.9.1.min.js"></script> 	 	
+	<script src="js/confirm.js"></script> 	       	  	  	
+    <script type="text/javascript">
+	//<![CDATA[
+		
+		var expandMessage = "";
+		var collapseMessage = "";
+	//]]>	
+	</script>
+	<script src="js/system.js"></script>  
+	<script src="js/util.js"></script>
+	<script type="text/javascript">
+    //<![CDATA[
+        var MAVersion ='201907161638';
+		var localeCode = 'en';
+		var largeFontSizeTxt="<span class=\"access\">Text Size: Larger(</span>A+<span class=\"access\">)</span>";
+		var defaultFontSizeTxt="<span class=\"access\">Text Size: Default Size(</span>A-<span class=\"access\">)</span>";
+		var touchStartEnable = false ;	
+		var defaultFont='Text Size: Default Size';
+		var largeFont='Text Size: Larger';
+    //]]> 
+   	</script>
+  	
+	<script src="js/editAddressTemp.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="css/confirm.css">
+	<link type="text/css" rel="stylesheet" href="css/editAddressTemp.css">
+	<link type="text/css" rel="stylesheet" href="css/errorMsg.css">
+	<link type="text/css" rel="stylesheet" href="css/editAddressResidential.css">
+	<link href="css/fontSmall.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="en" data-new-gr-c-s-check-loaded="14.1000.0" data-gr-ext-installed="">
+	<div class="access icon-loading"></div>
+	<div class="ui-loader-background"><div class="icon-loading"></div></div>
+	<div data-role="page" class="pages" id="home"><div id="pageContainer">
+<form id="myfm" name="myfm" method="post" action="/acknowledgment" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="myfm" value="myfm">
+
+		<a href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/acknowledgment.html?faces-redirect=true#announcement" id="jtcEAS" data-ajax="false" class="access" style="margin:0 30px 30px 0">main content</a>
+		<div class="top-heading">					
+			<div id="branding">
+				<div id="mygovhklogo">
+					 <div class="header-logo-container" title="RA1 - Edit Personal Information  Logo"></div>	
+					 <div class="header-title"><span class="header-title-grey">Edit</span><span class="header-title-orange">Personal Information </span></div>							
+					 <div class="clear"></div>
+				</div>
+			</div>									
+			<div id="top-tool-bar">
+				<div class="floatedWrapper" id="ttb-container">
+					<ul role="navigation" id="lang">
+						<li>
+							<a id="fontSize" class="alink" data-ajax="false" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/acknowledgment.html?faces-redirect=true#" onclick="javascript:fontSizeOnClick();" title="Text Size: Larger"><span class="access">Text Size: Larger(</span>A+<span class="access">)</span></a>
+						</li>
+						
+						<li>
+							<a id="addressLookUp" class="alink" data-ajax="false" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/addressLookup" title="Address Look Up">
+								<span class="access">Address Look Up(</span>
+								Address Look Up
+								<span class="access">)</span>
+							</a>
+						</li>
+						
+	                    <li> 
+	                    </li>
+											                    
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="content_container">
+
+
+		<div role="main" id="content" class="box">
+
+
+			<div id="announcement">
+				<div class="createAcctHeading">
+					<h1 class="h1-title-edit">RA1 - Edit Personal Information </h1>
+				</div>
+			</div>
+			<div style="margin: 0 10px;">
+
+				<span> <strong>Acknowledgment</strong></span> 
+				<br><div>Your acknowledgment number of this transaction is <input type="text" Id="ackId" name="ackId" th:value="${ackId}" style="outline: none; border:0px" disabled /></div>
+				<br><br>
+				<div>Name: <input type="text" Id="name" name="name" th:value="${name}" style="outline: none; border:0px" disabled /></div>
+				<br><div>Phone No.: <input type="text" Id="phoneNo" name="phoneNo" th:value="${phoneNo}" style="outline: none; border:0px" disabled/></div>
+
+				<br />
+				<span id="addressTitle" style="line-height:40px;"></span>
+				<div id="address">
+					<span id="structuredAddress" style="line-height:30px;"></span><br>
+				</div>
+				
+				<input type="hidden" Id="currReg" name="currReg" th:value="${currReg}" />
+				<input type="hidden" Id="currDist" name="currDist" th:value="${currDist}" />
+				<input type="hidden" Id="building" name="building" th:value="${building}" />
+				<input type="hidden" Id="estate" name="estate" th:value="${estate}" />
+				<input type="hidden" Id="phase" name="phase" th:value="${phase}" />
+				<input type="hidden" Id="village" name="village" th:value="${village}" />
+				<input type="hidden" Id="house_num" name="house_num" th:value="${house_num}" />
+				<input type="hidden" Id="block" name="block" th:value="${block}" />
+				<input type="hidden" Id="block_desc" name="block_desc" th:value="${block_desc}" />
+				<input type="hidden" Id="floor" name="floor" th:value="${floor}" />
+				<input type="hidden" Id="unit" name="unit" th:value="${unit}" />
+				<input type="hidden" Id="unit_desc" name="unit_desc" th:value="${unit_desc}" />				
+				
+				<input type="hidden" Id="line1" name="line1" th:value="${line1}" />
+				<input type="hidden" Id="line2" name="line2" th:value="${line2}" />
+				<input type="hidden" Id="line3" name="line3" th:value="${line3}" />
+				
+				<input type="hidden" Id="currPOReg" name="currPOReg" th:value="${currPOReg}" />
+				<input type="hidden" Id="currOffice" name="currOffice" th:value="${currOffice}" />
+				<input type="hidden" Id="POBox" name="POBox" th:value="${POBox}" />
+				
+				<input type="hidden" Id="ddType" name="ddType" th:value="${ddType}" />
+				<input type="hidden" Id="ddNo" name="ddNo" th:value="${ddNo}" />				
+				<input type="hidden" Id="lotType" name="lotType" th:value="${lotType}" />
+				<input type="hidden" Id="lotNo" name="lotNo" th:value="${lotNo}" />				
+				<input type="hidden" Id="lotEx" name="lotEx" th:value="${lotEx}" />
+				<input type="hidden" Id="lotSec1" name="lotSec1" th:value="${lotSec1}" />				
+				<input type="hidden" Id="lotSubSec1" name="lotSubSec1" th:value="${lotSubSec1}" />
+				<input type="hidden" Id="lotSec2" name="lotSec2" th:value="${lotSec2}" />				
+				<input type="hidden" Id="lotSubSec2" name="lotSubSec2" th:value="${lotSubSec2}" />
+				<input type="hidden" Id="lotSec3" name="lotSec3" th:value="${lotSec3}" />				
+				<input type="hidden" Id="lotSubSec3" name="lotSubSec3" th:value="${lotSubSec3}" />
+				<input type="hidden" Id="lotSec4" name="lotSec4" th:value="${lotSec4}" />				
+																
+				<input type="hidden" Id="whyIndHidden" name="whyIndHidden" th:value="${whyIndHidden}" />
+								
+			</div>
+			
+			<div id="actionContent" class="actionContent" data-enhance="false">
+		  		<input id="cancelBtn" type="button" name="cancelBtn" value="Exit" title="Exit" class="submitShortBtn2" onclick="window.location.href='http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/'">
+			</div>
+			
+
+		</div>
+			
+		<div class="submitShortBtn2_hover access"></div>
+		</div>
+			<br>	
+		</div>
+		
+		<div id="footerbox">
+			<div class="hr"></div>
+		
+			<div class="icon-container">
+			
+				<div class="eastable" style="width: 100%;"><div class="eastbody"><div class="eastr">
+				
+				<div class="eastd" style="width:100px;vertical-align:middle;text-align:left;"> 
+					<div id="w3" class="footer-w3c">
+						<a title="WCAG 2.0 Level Double-A Conformance" id="w3cLink" href="http://www.w3.org/WAI/WCAG2AA-Conformance" rel="external" target="_blank">
+		    			</a>
+					</div>
+				</div>
+				<div class="eastd" style="vertical-align:middle;text-align:left;">
+				    <a href="http://www.webforall.gov.hk/recognition_scheme" id="_footer_slogan" rel="external" target="_blank">
+					   <img id="WebAccessibility-img" style="border-top-width:0px;border-top-style:none;border-right-width:0px;border-right-style:none;border-bottom-width:0px;border-bottom-style:none;border-left-width:0px;border-left-style:none;" class="footer-webaccessibility" title="Web Accessibility Recognition Scheme" alt="Web Accessibility Recognition Scheme" src="images/WARS_2014_Web_Gold_wSolgan_en.png">
+				    </a>
+				</div>
+				
+				<div class="eastd" style="vertical-align:middle;text-align:right;">
+					<div id="brandhk" class="footer-brandhk">
+						<a title="Brand Hong Kong" id="brandhkLink" href="http://mobile.brandhk.gov.hk/" rel="external" target="_blank">
+		    			</a>
+					</div>
+				</div>	
+				
+				</div></div></div>
+			</div>
+		</div>	
+		
+		<script>
+			$(document).ready(function(){
+				loadEASFont();
+			});
+		</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="8717029534993003046:4664555916270729144" autocomplete="off">
+</form></div></div>
+</body></html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://ra1.caas.gcisdctr.hksarg/caasra1/postBox.xhtml?faces-redirect=true -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head id="j_idt2"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" type="image/x-icon" href="images/mygovhk/common/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="images/mygovhk/common/favicon.ico">
+	<title>
+	RA - Edit Personal Information  – P.O. Box
+	</title>
+
+	<script src="js/jquery-1.9.1.min.js"></script> 	 	      	  	  	
+    <script type="text/javascript">
+	//<![CDATA[
+		
+		var expandMessage = "";
+		var collapseMessage = "";
+	//]]>	
+	</script>
+	<script src="js/system.js"></script>  
+	<script src="js/util.js"></script>
+	<script type="text/javascript">
+    //<![CDATA[
+        var MAVersion ='201910091444';
+		var localeCode = 'en';
+		var largeFontSizeTxt="<span class=\"access\">Text Size: Larger(</span>A+<span class=\"access\">)</span>";
+		var defaultFontSizeTxt="<span class=\"access\">Text Size: Default Size(</span>A-<span class=\"access\">)</span>";
+		var touchStartEnable = false ;	
+		var defaultFont='Text Size: Default Size';
+		var largeFont='Text Size: Larger';
+    //]]> 
+   	</script>
+  	
+	<script src="js/editAddressTemp.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="css/editAddressTemp.css">
+	<link type="text/css" rel="stylesheet" href="css/errorMsg.css">	
+	<link type="text/css" rel="stylesheet" href="css/postBox.css">
+	<script>
+	var pls_select='Please Select';
+	var poBoxList = new Object();
+	</script>
+	<script src="js/postBox.js"></script>
+	<script type="text/javascript" src="js/jsf.js"></script>
+	<link href="css/fontSmall.css" rel="stylesheet" type="text/css"></head><body class="en" data-new-gr-c-s-check-loaded="14.998.0" data-gr-ext-installed="">
+	<div class="access icon-loading"></div>
+	<div class="ui-loader-background" style="display: none;"><div class="icon-loading"></div></div>
+	<div data-role="page" class="pages" id="home"><div id="pageContainer">
+<form id="myfm" name="myfm" method="get" action="/postBox" enctype="application/x-www-form-urlencoded">
+		<input type="hidden" name="myfm" value="myfm">		
+		
+		<input type="hidden" name="name" th:value="${name}" />
+		<input type="hidden" name="phoneNo" th:value="${phoneNo}" />
+		<input type="hidden" name="whyIndHidden" th:value="${whyIndHidden}" />
+
+		<a href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/postBox.html?faces-redirect=true#announcement" id="jtcEAS" data-ajax="false" class="access" style="margin:0 30px 30px 0">main content</a>
+		<div class="top-heading">					
+			<div id="branding">
+				<div id="mygovhklogo">
+					 <div class="header-logo-container" title="RA1 - Edit Personal Information  Logo"></div>	
+					 <div class="header-title"><span class="header-title-grey">Edit</span><span class="header-title-orange">Personal Information </span></div>							
+					 <div class="clear"></div>
+				</div>
+			</div>									
+			<div id="top-tool-bar">
+				<div class="floatedWrapper" id="ttb-container">
+					<ul role="navigation" id="lang">
+						<li>
+							<a id="fontSize" class="alink" data-ajax="false" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/postBox.html?faces-redirect=true#" onclick="javascript:fontSizeOnClick();" title="Text Size: Larger"><span class="access">Text Size: Larger(</span>A+<span class="access">)</span></a>
+						</li>
+						
+						<li>
+							<a id="addressLookUp" class="alink" data-ajax="false" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/addressLookup" title="Address Look Up">
+								<span class="access">Address Look Up(</span>
+								Address Look Up
+								<span class="access">)</span>
+							</a>
+						</li>
+						
+	                    <li> 
+	                    </li>
+											                    
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="content_container">	
+
+	<div role="main" id="content" class="box">
+                 
+                    
+                <div id="announcement">
+					<div class="createAcctHeading">
+						<h1 class="h1-title-edit">RA1 - Edit Personal Information </h1>
+						</div>		
+				</div>
+				
+				
+				
+				<div style="margin: 0 10px;">	
+					<span>
+							<strong>Address Type</strong>	
+					</span>
+									<br>
+					<span style="line-height:40px;">P.O. Box</span>
+			 		
+			 					
+						<div class="edit-field">	
+							<div class="field-label">
+															<label for="po_region"><strong>Post Office Region</strong></label>
+							</div>
+								    <div class="selectionDropDown">    	
+											<div id="po_regionDisplayTxt">CHEUNG CHAU</div>
+											<span></span><select id="po_region" size="1" style="visibility: visible; position: absolute">
+											
+											<option value="0">Please Select</option>
+													<option value="2">CHEUNG CHAU</option>
+													<option value="1">HONG KONG</option>
+													<option value="3">KOWLOON</option>
+													<option value="5">LAMMA ISLAND</option>
+													<option value="6">LANTAU ISLAND</option>
+													<option value="4">NEW TERRITORIES</option>
+													<option value="7">PENG CHAU</option>
+					
+										</select>    
+														
+								</div>
+						</div>    
+						
+						<div class="edit-field">	
+							<div class="field-label">
+								<label for="po_office"><strong>Post Office</strong></label>
+							</div>
+							
+									<div class="selectionDropDown">    	
+										<div id="po_officeDisplayTxt"> CHEUNG CHAU POST OFFICE</div>
+										<span></span><select id="po_office" size="1" style="visibility: visible; position: absolute">
+											<option value="0"> Please Select</option>
+											<option value="2"> CHEUNG CHAU POST OFFICE</option>
+										</select>	
+									</div>
+							</div>    
+								
+					<div class="edit-field">
+						<div class="field-label">
+														<label for="POBox"><strong>P.O. Box No.</strong></label>
+						</div>
+						
+						
+						<div class="ui-input-text"><input id="POBox" type="text" name="POBox" autocomplete="off" class="ui-body-g " maxlength="6">
+			
+						</div>
+					
+					</div>
+			   <div>
+				<div id="actionContent" class="actionContent" data-enhance="false">
+				   <input id="submitBtn" type="submit" name="submitBtn" value="Submit" title="Submit" class="submitShortBtn2" onclick="showLoading()">
+				   <input id="backBtn" type="button" name="backBtn" value="Back" title="Back" class="submitShortBtn2" onclick="window.history.back()">
+				   <input id="cancelBtn" type="button" name="cancelBtn" value="Cancel" title="Cancel" class="submitShortBtn2" onclick="window.location.href='http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/'">
+				</div>
+			  </div>
+		</div>
+	</div>
+              <div class="submitShortBtn2_hover access"></div><input id="currPOReg" type="hidden" name="currPOReg" value="2">
+              <input id="currOffice" name="currOffice" type="hidden" value="1"><input id="returnOfficeResult" type="hidden" name="returnOfficeResult" value="">
+             <a id="po_region_ajax" href="#" onclick="mojarra.ab(this,event,'click',0,'returnOfficeResult',{'onevent':function(data){upDateDropDown(data)}});return false" class="ui-hidden">#
+		 </a>
+			<br>
+		</div>
+		
+		<div id="footerbox">
+			<div class="hr"></div>
+		
+			<div class="icon-container">
+			
+				<div class="eastable" style="width: 100%;"><div class="eastbody"><div class="eastr">
+				
+				<div class="eastd" style="width:100px;vertical-align:middle;text-align:left;"> 
+					<div id="w3" class="footer-w3c">
+						<a title="WCAG 2.0 Level Double-A Conformance" id="w3cLink" href="http://www.w3.org/WAI/WCAG2AA-Conformance" rel="external" target="_blank">
+		    			</a>
+					</div>
+				</div>
+				<div class="eastd" style="vertical-align:middle;text-align:left;">
+				    <a href="http://www.webforall.gov.hk/recognition_scheme" id="_footer_slogan" rel="external" target="_blank">
+					   <img id="WebAccessibility-img" style="border-top-width:0px;border-top-style:none;border-right-width:0px;border-right-style:none;border-bottom-width:0px;border-bottom-style:none;border-left-width:0px;border-left-style:none;" class="footer-webaccessibility" title="Web Accessibility Recognition Scheme" alt="Web Accessibility Recognition Scheme" src="images/WARS_2014_Web_Gold_wSolgan_en.png">
+				    </a>
+				</div>
+				
+				<div class="eastd" style="vertical-align:middle;text-align:right;">
+					<div id="brandhk" class="footer-brandhk">
+						<a title="Brand Hong Kong" id="brandhkLink" href="http://mobile.brandhk.gov.hk/" rel="external" target="_blank">
+		    			</a>
+					</div>
+				</div>	
+				
+				</div></div></div>
+			</div>
+		</div>	
+		
+		<script>
+			$(document).ready(function(){
+				loadEASFont();
+			});
+		</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-1229094899435541149:1190882843073480045" autocomplete="off">
+</form></div></div>
+</body></html>

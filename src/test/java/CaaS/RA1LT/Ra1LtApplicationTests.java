@@ -1,0 +1,13 @@
+package CaaS.RA1LT;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class Ra1LtApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

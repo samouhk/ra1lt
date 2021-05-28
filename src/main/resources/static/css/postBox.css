@@ -1,0 +1,122 @@
+.floatLeft {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.h1-title-edit {
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: bold;
+	line-height: 42px;
+}
+
+.ui-input-search, div.ui-input-text {
+	margin-bottom: 10px;
+}
+
+.field-label {
+	margin-bottom: 4px;
+}
+
+.edit-field {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+/*DropDown*/
+.selectionDropDown {
+	overflow: hidden;
+	position: relative;
+	width: 35%;
+	z-index: 1;
+	background: url("../images/mygovhk/mySettings/btn_dropdown_04.png")
+		repeat-x scroll 0 0 #EFEFEF;
+	border: 1px solid #A9A9A9;
+	border-radius: 20px 20px 20px 20px;
+	min-height: 43px;
+	min-width: 320px;
+}
+
+.selectionDropDown div {
+	background: none repeat scroll 0 0 transparent;
+	margin-left: 15px;
+	margin-top: 10px;
+	opacity: 1;
+	overflow: hidden;
+	z-index: 1;
+	line-height: 24px;
+	padding-right: 46px;
+	width: 82%;
+}
+
+.selectionDropDown span {
+	background: url("../images/mygovhk/mySettings/icon_down1.png") no-repeat
+		scroll 7px center transparent;
+	border-left: 1px solid #D2D2D2;
+	position: absolute;
+	height: 100%;
+	overflow: hidden;
+	width: 30px;
+	right: 15px;
+	top: 0;
+}
+
+.selectionDropDown select {
+	border: none;
+	height: inherit;
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+	cursor: pointer;
+	min-height: 100%;
+	min-width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: none repeat scroll 0 0 white;
+	opacity: 0;
+	-ms-filter: ��alpha(opacity = 0);
+	filter: alpha(opacity = 0);
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+	font-size: inherit;
+}
+
+.focusOutline {
+	outline: 1px solid #4D90FE;
+}
+
+.focusBorder {
+	border: 1px solid #4D90FE !important;
+}
+
+div.ui-input-text input.ui-body-g {
+	width: 310px;
+	min-width: 310px;
+}
+
+div.ui-input-text input.ui-body-g:focus, div.ui-input-text input.ui-body-g:hover
+	{
+	width: 310px;
+	min-width: 310px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) , only screen and
+		(min-device-pixel-ratio : 1.5) , only screen and
+		(min--moz-device-pixel-ratio : 1.5) , only screen and
+		(-o-min-device-pixel-ratio: 3/2) , only screen and (min-resolution:
+	1.5dppx) {
+	.selectionDropDown, div.ui-input-text input.ui-body-g:focus, div.ui-input-text input.ui-body-g:hover,
+		div.ui-input-text input.ui-body-g, .editAddressDropDown {
+		width: 100%;
+		min-width: 0px;
+	}
+}

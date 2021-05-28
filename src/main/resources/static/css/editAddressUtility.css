@@ -1,0 +1,72 @@
+.floatLeft {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.mySetting-radio-on {
+	background-image: url("../images/mygovhk/common/radiobtn_on.png");
+	width: 20px;
+	height: 20px;
+	background-size: 15pt auto;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.mySetting-radio-off {
+	background-image: url("../images/mygovhk/common/radiobtn_off.png");
+	width: 20px;
+	height: 20px;
+	background-size: 15pt auto;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.h1-title-edit {
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: bold;
+	line-height: 42px;
+}
+
+.hiddenProccessField {
+	position: absolute;
+	left: -10000px;
+	clip: rect(0px, 0px, 0px, 0px);
+}
+
+.focusOutline {
+	outline: 1px solid #4D90FE;
+}
+
+.focusBorder {
+	border: 1px solid #4D90FE !important;
+}
+
+#reasonDelete div {
+	padding: 3px 0;
+	line-height: 20px;
+}
+
+#reasonDelete {
+	padding-top: 15px;
+}
+
+.ui-input-text{
+	width:310px;
+    min-width: 310px;
+    line-height: 35px;
+}
+
+.input-margin {
+	margin: 0 13px;	
+}
+
+.edit-field{
+	padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+}

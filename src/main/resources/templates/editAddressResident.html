@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://ra1.caas.gcisdctr.hksarg/caasra1/editAddressResident.xhtml?faces-redirect=true -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="j_idt2">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<link rel="icon" type="image/x-icon" href="images/mygovhk/common/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="images/mygovhk/common/favicon.ico">
+	<title>RA1 - Edit Personal Information  - HK</title>
+
+	<script src="js/jquery-1.9.1.min.js"></script> 	 	      	  	  	
+    <script type="text/javascript">
+	//<![CDATA[
+		
+		var expandMessage = "";
+		var collapseMessage = "";
+	//]]>	
+	</script>
+	<script src="js/system.js"></script>  
+	<script src="js/util.js"></script>
+	<script type="text/javascript">
+    //<![CDATA[
+        var MAVersion ='201907161638';
+		var localeCode = 'en';
+		var largeFontSizeTxt="<span class=\"access\">Text Size: Larger(</span>A+<span class=\"access\">)</span>";
+		var defaultFontSizeTxt="<span class=\"access\">Text Size: Default Size(</span>A-<span class=\"access\">)</span>";
+		var touchStartEnable = false ;	
+		var defaultFont='Text Size: Default Size';
+		var largeFont='Text Size: Larger';
+    //]]> 
+   	</script>
+  	
+	<script src="js/editAddressTemp.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="css/editAddressTemp.css">
+	<link type="text/css" rel="stylesheet" href="css/errorMsg.css">
+		<link type="text/css" rel="stylesheet" href="css/editAddressResident.css">
+	<script type="text/javascript">
+	//<![CDATA[ 
+	var pls_select='Please Select';
+	var block_other='';
+	var unit_other='';
+	var list_last="NIL";
+	var build_prefix_number="3";
+	var street="3";
+	var street_position=0;
+	var street_length=0;
+	var building_position=0;
+	var building_length=0;
+	var estate_position=0;
+	var estate_length=0;
+	var street_place_holder='(e.g. 2A, 14-18) ';
+	var localcode="en";
+	var regionHK="empty";
+	var regionKLN="empty";
+	var regionNT="empty";
+	//]]>
+	</script>
+	
+	<script src="js/editAddressResident.js"></script>
+	<script type="text/javascript" src="js/jsf.js"></script>
+	<link href="css/fontSmall.css" rel="stylesheet" type="text/css">
+</head>
+<body class="en" data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed="">
+	<div class="access icon-loading"></div>
+	<div class="ui-loader-background" style="display: none;">
+		<div class="icon-loading">
+		</div>
+	</div>
+	<div data-role="page" class="pages" id="home"><div id="pageContainer">
+<form id="myfm" name="myfm" method="get" action="/editAddressResident" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="myfm" value="myfm">
+
+		<a href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/editAddressResident.html?faces-redirect=true#announcement" id="jtcEAS" data-ajax="false" class="access" style="margin:0 30px 30px 0">main content</a>
+		<div class="top-heading">					
+			<div id="branding">
+				<div id="mygovhklogo">
+					 <div class="header-logo-container" title="RA1 - Edit Personal Information  Logo"></div>	
+					 <div class="header-title"><span class="header-title-grey">Edit</span><span class="header-title-orange">Personal Information </span></div>							
+					 <div class="clear"></div>
+				</div>
+			</div>									
+			<div id="top-tool-bar">
+				<div class="floatedWrapper" id="ttb-container">
+					<ul role="navigation" id="lang">
+						<li>
+							<a id="fontSize" class="alink" data-ajax="false" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/editAddressResident.html?faces-redirect=true#" onclick="javascript:fontSizeOnClick();" title="Text Size: Larger"><span class="access">Text Size: Larger(</span>A+<span class="access">)</span></a>
+						</li>
+						
+						<li>
+							<a id="addressLookUp" class="alink" data-ajax="false" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/addressLookup" title="Address Look Up">
+								<span class="access">Address Look Up(</span>
+								Address Look Up
+								<span class="access">)</span>
+							</a>
+						</li>
+						
+	                    <li> 
+	                    </li>
+											                    
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="content_container">
+		
+	<div role="main" id="content" class="box">
+                 
+                    
+        <div id="announcement">
+			<div class="createAcctHeading">
+				<h1 class="h1-title-edit">RA1 - Edit Personal Information </h1>
+			</div>		
+		</div>
+		
+		<div style="margin: 0 10px;">
+		
+			<div class="edit-field" style="padding-top:0px">
+								<span>
+									<strong>Input Address</strong>									
+								</span>
+								<br>
+								<span style="line-height:40px;">Address in Hong Kong</span>
+								<div>
+									<input type="hidden" name="name" th:value="${name}" />
+									<input type="hidden" name="phoneNo" th:value="${phoneNo}" />			
+									<input type="hidden" name="whyIndHidden" th:value="${whyIndHidden}" />
+									
+									<div style="margin-bottom: 4px;  line-height: 20px ;float:left;">
+										<div style="width: 30px; position:absolute;">
+											<span id="whyInd_1" class="mySetting-radio-on"></span>
+											<div class="hiddenProccessField">
+												<input type="radio" name="whyIndHidden" id="whyInd_1_Hidden" value="1">
+											</div>
+										</div>
+										<div style="margin-left: 30px">
+											<label for="whyInd_1_Hidden">Standard/Village</label>
+										</div>
+									</div>
+									<div style="margin-bottom: 4px; padding-left: 30px; line-height: 20px;float:left;">
+										<div style="width: 30px; position:absolute;">
+											<span id="whyInd_2" class="mySetting-radio-off"></span>
+											<div class="hiddenProccessField">
+												<input type="radio" name="whyIndHidden" id="whyInd_2_Hidden" value="2">
+											</div>
+										</div>
+										<div style="margin-left: 30px">
+											<label for="whyInd_2_Hidden">Lot</label>
+										</div>
+									</div>
+									<div class="field-label-end"></div>
+								</div>
+	
+							</div>
+				    
+	<div class="stand" style="display: block;">
+		<div class="edit-field">	
+			<div class="field-label">
+											<label for="region"><strong>Region</strong></label>
+			</div>
+			    <div id="regionDropDownID" class="selectionDropDown ">    	
+							<div id="regionDisplayTxt">HONG KONG</div>
+							<span></span>
+							<select id="region" size="1" style="visibility: visible; position: absolute" autocomplete="off">
+							
+							<option value="0">Please Select</option>
+									<option value="HK" selected="selected">HONG KONG</option>
+									<option value="KLN">KOWLOON</option>
+									<option value="NT">NEW TERRITORIES</option>
+	
+						</select>    
+										
+				</div>
+			</div>    
+		
+		
+		
+				   
+		<div class="edit-field">	
+			<div class="field-label">
+											<label for="district"><strong>District</strong></label>
+			</div>
+			<div id="districtDropDownID" class="selectionDropDown ">    	
+						<div id="districtDisplayTxt">CENTRAL</div>
+						<span></span>
+						<select id="district" size="1" style="visibility: visible; position: absolute"><option value=""> Please Select</option>
+						<option value="CW"> CENTRAL &amp; WESTERN DISTRICT</option>
+						<option value="ADM"> &nbsp;&nbsp;&nbsp;&nbsp;ADMIRALTY</option>
+						<option selected="selected" value="CEN"> &nbsp;&nbsp;&nbsp;&nbsp;CENTRAL</option>
+						<option value="KET"> &nbsp;&nbsp;&nbsp;&nbsp;KENNEDY TOWN</option>
+						<option value="MIL"> &nbsp;&nbsp;&nbsp;&nbsp;MID-LEVELS</option>
+						<option value="SYP"> &nbsp;&nbsp;&nbsp;&nbsp;SAI YING PUN</option>
+						<option value="STT"> &nbsp;&nbsp;&nbsp;&nbsp;SHEK TONG TSUI</option>
+						<option value="SHW"> &nbsp;&nbsp;&nbsp;&nbsp;SHEUNG WAN</option>
+						<option value="THP"> &nbsp;&nbsp;&nbsp;&nbsp;THE PEAK</option>
+						<option value="WP"> &nbsp;&nbsp;&nbsp;&nbsp;WEST POINT </option>
+						</select>	
+			</div>						   
+		   	</div>    
+		
+		
+		<div class="edit-field">	
+			<div class="search-field">
+				<div class="field-label">
+												<label for="building"><strong>Building Name</strong></label>
+				</div>
+				
+				
+				<div class="ui-input-text"><input id="building" type="text" name="building" autocomplete="off" value="" class="ui-body-g " maxlength="195">
+				
+				</div>
+				
+				<div id="building_ajax_table" class="table"></div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="edit-field">	
+			<div class="field-label">
+											<label for="estate"><strong>Estate Name</strong></label>
+			</div>
+			
+			<div class="ui-input-text"><input id="estate" type="text" name="estate" autocomplete="off" value="" class="ui-body-g " maxlength="80">
+										
+			</div>
+			<div id="estate_ajax_table" class="table"></div>			
+		</div>
+		
+		
+		<div class="edit-field">	
+			<div class="field-label">
+											<label for="phase"><strong>Phase</strong></label>
+			</div>
+			
+			<div class="ui-input-text"><input id="phase" type="text" name="phase" autocomplete="off" value="" class="ui-body-g " maxlength="80">
+										
+			</div>
+		</div>
+		
+		
+		<div class="edit-field">
+			<div class="search-field">	
+				<div class="field-label">
+												<label for="village"><strong>Street/Village Name</strong></label>
+				</div>
+				
+				<div class="ui-input-text"><input id="village" type="text" name="village" autocomplete="off" value="" class="ui-body-g " maxlength="67">
+				</div>
+				
+				<div id="street_ajax_table" class="table"></div>
+				
+			</div>
+		</div>
+		
+		
+		<div class="edit-field">	
+			<div class="field-label">
+											<label for="house_num"><strong>Street/House Number </strong></label>
+			</div>
+			
+			<div class="ui-input-text"><input id="house_num" type="text" name="house_num" autocomplete="off" value="" class="ui-body-g " maxlength="15" placeholder="(e.g. 2A, 14-18) ">
+			</div>
+		</div>
+		
+		
+		<div class="edit-field">
+			<div class="field-label">
+											<label for="block_desc"><strong>Block</strong></label>
+											<label for="block" class="access">Block description</label>
+			</div>
+			
+			<div class="blockUnitContainer en">
+			
+					 
+				
+			    <div id="blockDropDownID" class="specail_DropDown">    	
+							<div id="blockTxt">Tower</div>
+							<span></span><select id="block" name="block" size="1">	
+							<option value="0">Please Select</option>
+							<option value="Block">Block</option>
+							<option value="Tower">Tower</option>
+							<option value="House">House</option>
+							<option value="NIL">Others</option>
+						</select>	
+										
+				</div><div id="blockTextContainerID" class="ui-input-text speacail_input_eng"><input id="block_desc" type="text" name="block_desc" autocomplete="off" value="" class="speacail_ui_body  " maxlength="15">
+				</div>		
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		
+		<div class="edit-field">
+			<div class="field-label">
+											<label for="floor"><strong>Floor</strong></label>
+			</div>
+			
+			<div class="ui-input-text"><input id="floor" type="text" name="floor" autocomplete="off" value="" class="ui-body-g " maxlength="20">
+			
+			</div>
+		</div>
+		
+				
+		<div class="edit-field">
+			<div class="field-label">
+											<label for="unit_desc"><strong>Unit</strong></label>
+											<label for="unit" class="access">Unit description</label>
+			
+			</div>
+			
+			
+			<div class="blockUnitContainer en">
+			
+						
+				
+				<div id="unitDropDownID" class="specail_DropDown">    	
+								<div id="unitTxt">Please Select</div>
+								<span></span><select id="unit" name="unit" size="1">	
+								<option value="0">Please Select</option>
+								<option value="Flat">Flat</option>
+								<option value="Shop">Shop</option>
+								<option value="Unit">Unit</option>
+								<option value="Suite">Suite</option>
+								<option value="Room">Room</option>
+								<option value="NIL">Others</option>
+							</select>	
+											
+					</div><div id="unitTextContainerID" class="ui-input-text speacail_input_eng"><input id="unit_desc" type="text" name="unit_desc" autocomplete="off" value="" class="speacail_ui_body " maxlength="23">
+						</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="lot" style="display: none;">
+		
+		<div class="edit-field">
+			<div class="field-label">
+											<label for="ddType"><strong>DD Type</strong></label>
+			</div>
+				
+			
+			<div class="ui-input-text"><input id="ddType" type="text" name="ddType" autocomplete="off" class="ui-body-g " maxlength="5">
+			
+			</div>
+		
+		</div>
+		
+		<div class="edit-field">
+			<div class="field-label">
+											<label for="ddNo"><strong>DD No.</strong></label>
+			</div>
+			
+			<div class="ui-input-text"><input id="ddNo" type="text" name="ddNo" autocomplete="off" class="ui-body-g " maxlength="4">
+			</div>
+		
+		</div>
+		
+		
+		<div class="edit-field">
+			<div class="field-label">
+											<label for="lotType"><strong>Lot Type</strong></label>
+			</div>
+			
+			
+			<div class="ui-input-text"><input id="lotType" type="text" name="lotType" autocomplete="off" class="ui-body-g " maxlength="15">
+			</div>
+		
+		</div>
+		
+		
+		<div class="edit-field">
+			<div class="field-label">
+											<label for="lotNo"><strong>Lot No.</strong></label>
+			</div>
+			
+			<div class="ui-input-text"><input id="lotNo" type="text" name="lotNo" autocomplete="off" class="ui-body-g " maxlength="13">
+			</div>
+		
+		</div>
+		
+		
+		
+		<div class="edit-field">
+			
+			<div class="lotStyle">
+				<div class="field-label">
+												<label for="lotSec1"><strong>Lot Section 1</strong></label>
+				</div>
+							
+				<div class="ui-input-text"><input id="lotSec1" type="text" name="lotSec1" autocomplete="off" class="ui-body-g " maxlength="4">
+				</div>
+			</div>
+			<div class="lotStyle">
+				<div class="field-label">
+												<label for="lotSubSec1"><strong>Lot Subsection 1</strong></label>
+				</div>
+				
+				<div class="ui-input-text"><input id="lotSubSec1" type="text" name="lotSubSec1" autocomplete="off" class="ui-body-g " maxlength="4">
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	
+		<div class="edit-field">
+			<div class="lotStyle">
+				<div class="field-label">
+												<label for="lotSec2"><strong>Lot Section 2</strong></label>
+				</div>
+
+				<div class="ui-input-text"><input id="lotSec2" type="text" name="lotSec2" autocomplete="off" class="ui-body-g " maxlength="4">
+				</div>
+			</div>
+			<div class="lotStyle">
+				<div class="field-label">
+												<label for="lotSubSec2"><strong>Lot Subsection 2</strong></label>
+				</div>
+				
+				<div class="ui-input-text"><input id="lotSubSec2" type="text" name="lotSubSec2" autocomplete="off" class="ui-body-g " maxlength="3">
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		
+		<div class="edit-field">			
+			<div class="lotStyle">
+				<div class="field-label">
+												<label for="lotSec3"><strong>Lot Section 3</strong></label>
+				</div>
+				
+								
+				<div class="ui-input-text"><input id="lotSec3" type="text" name="lotSec3" autocomplete="off" class="ui-body-g " maxlength="4">
+				</div>
+			</div>
+			<div class="lotStyle">
+				<div class="field-label">
+												<label for="lotSubSec3"><strong>Lot Subsection 3</strong></label>
+				</div>
+				
+				<div class="ui-input-text"><input id="lotSubSec3" type="text" name="lotSubSec3" autocomplete="off" class="ui-body-g " maxlength="3">
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div class="edit-field">
+			<div class="field-label">
+											<label for="lotSec4"><strong>Lot Section 4</strong></label>
+			</div>
+			
+			<div class="ui-input-text"><input id="lotSec4" type="text" name="lotSec4" autocomplete="off" class="ui-body-g " maxlength="4">
+			
+			</div>
+		
+		</div>
+		
+		<div class="edit-field">
+			<div class="field-label">
+											<label for="lotEx"><strong>Lot Extend Portion Code</strong></label>
+			</div>
+			<div class="ui-input-text"><input id="lotEx" type="text" name="lotEx" autocomplete="off" class="ui-body-g " maxlength="1">
+		
+			</div>
+		
+		</div>
+		
+	</div>
+		<div>
+				<div id="actionContent" class="actionContent" data-enhance="false">
+				<input id="submitBtn" type="submit" name="submitBtn" value="Submit" title="Submit" class="submitShortBtn2" onclick="showLoading()">
+				<input id="backBtn1" type="button" name="backBtn1" value="Back" title="Back" class="submitShortBtn2" onclick="window.history.back()">
+				<input id="cancelBtn" type="button" name="cancelBtn" value="Cancel" title="Cancel" class="submitShortBtn2" onclick="window.location.href='http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/'">
+				</div>
+		</div>
+		
+	</div>
+     </div>
+     	<div class="submitShortBtn2_hover access"></div><span id="systemError"></span>
+     	<input id="currType" type="hidden" name="currType" value="1">
+     	<input id="currReg" type="hidden" name="currReg" value="HK">
+     	<input id="currDist" type="hidden" name="currDist" value="CEN">
+     	<input id="returnDistResult" type="hidden" name="returnDistResult" value="">
+     	<a id="region_ajax" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/editAddressResident.html?faces-redirect=true#" onclick="mojarra.ab(this,event,'click',0,'returnDistResult',{'onevent':function(data){upDateDropDown(data)}});return false" class="ui-hidden" name="region_ajax">
+						#
+ </a><input type="hidden" name="j_idt160"><input id="currBuild" type="hidden" name="currBuild"><input id="currEstate" type="hidden" name="currEstate"><input id="currStreet" type="hidden" name="currStreet">
+     <input id="building_result" type="hidden" name="building_result">
+     <input id="estate_result" type="hidden" name="estate_result">
+     <input id="street_result" type="hidden" name="street_result">
+     <a id="building_ajax" href="http://ra1.caas.gcisdctr.hksarg/caasra1/editAddressResident.xhtml?faces-redirect=true#" onclick="mojarra.ab(this,event,'click',0,'building_result',{'onevent':function(data){building_ajax(data)}});return false" class="ui-hidden">
+						#
+ </a><a id="estate_ajax" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/editAddressResident.html?faces-redirect=true#" onclick="mojarra.ab(this,event,'click',0,'estate_result',{'onevent':function(data){estate_ajax(data)}});return false" class="ui-hidden">
+						#
+ </a><a id="street_ajax" href="http://ra1lt-t1cp-tg00100000-ns.apps.t11.caas.gcisdctr.hksarg/editAddressResident.html?faces-redirect=true#" onclick="mojarra.ab(this,event,'click',0,'street_result',{'onevent':function(data){street_ajax(data)}});return false" class="ui-hidden">
+						#
+ </a>
+			<br>	
+		</div>
+		
+		<div id="footerbox">
+			<div class="hr"></div>
+		
+			<div class="icon-container">
+			
+				<div class="eastable" style="width: 100%;"><div class="eastbody"><div class="eastr">
+				
+				<div class="eastd" style="width:100px;vertical-align:middle;text-align:left;"> 
+					<div id="w3" class="footer-w3c">
+						<a title="WCAG 2.0 Level Double-A Conformance" id="w3cLink" href="http://www.w3.org/WAI/WCAG2AA-Conformance" rel="external" target="_blank">
+		    			</a>
+					</div>
+				</div>
+				<div class="eastd" style="vertical-align:middle;text-align:left;">
+				    <a href="http://www.webforall.gov.hk/recognition_scheme" id="_footer_slogan" rel="external" target="_blank">
+					   <img id="WebAccessibility-img" style="border-top-width:0px;border-top-style:none;border-right-width:0px;border-right-style:none;border-bottom-width:0px;border-bottom-style:none;border-left-width:0px;border-left-style:none;" class="footer-webaccessibility" title="Web Accessibility Recognition Scheme" alt="Web Accessibility Recognition Scheme" src="images/WARS_2014_Web_Gold_wSolgan_en.png">
+				    </a>
+				</div>
+				
+				<div class="eastd" style="vertical-align:middle;text-align:right;">
+					<div id="brandhk" class="footer-brandhk">
+						<a title="Brand Hong Kong" id="brandhkLink" href="http://mobile.brandhk.gov.hk/" rel="external" target="_blank">
+		    			</a>
+					</div>
+				</div>	
+				
+				</div></div></div>
+			</div>
+		</div>	
+		
+		<script>
+			$(document).ready(function(){
+				loadEASFont();
+			});
+		</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="1180691427924932758:4435717090269438432" autocomplete="off">
+</form></div></div>
+</body></html>

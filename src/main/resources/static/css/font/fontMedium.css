@@ -1,0 +1,33 @@
+.expand {
+	margin-left: 274px;
+	width: 696px ;
+}
+
+
+body{
+	font-size: 125%;
+}
+
+h2 .ui-fullsize .ui-btn-inner
+{
+	font-size: 27.5px;
+}
+
+.ui-popup .ui-title,
+input.ui-input-text,
+label.ui-input-text,
+.ui-btn-inner,
+h3 .ui-fullsize .ui-btn-inner
+{
+	font-size: 20px;
+}
+
+.err-msg,
+.ui-collapsible-content
+{
+	font-size: 17.5px;
+}
+
+.searchField{
+	padding: 8px 70px 8px 10px;
+}

@@ -1,0 +1,1832 @@
+/*part of eas.css*/
+
+/*the body div*/
+/* .ui-mobile [data-role="page"], .ui-mobile [data-role="dialog"], .ui-page, */
+.pages {
+	/*overflow-x: hidden;*/
+	position: relative;
+	box-shadow: none;
+	margin-left: auto;
+	margin-right: auto;
+	/*
+    max-width: 1024px;
+    min-width: 315px;
+    */
+	max-width: 970px;
+	min-width: 315px;
+	width: 100%;
+	background: #f9f9f9 /*{g-body-background-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9
+		/*{g-body-background-start}*/),
+		to(#eeeeee /*{g-body-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(#f9f9f9 /*{g-body-background-start}*/, #eeeeee
+		/*{g-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(#f9f9f9 /*{g-body-background-start}*/, #eeeeee
+		/*{g-body-background-end}*/); /* FF3.6 */
+	background-image: -ms-linear-gradient(#f9f9f9 /*{g-body-background-start}*/, #eeeeee
+		/*{g-body-background-end}*/); /* IE10 */
+	background-image: -o-linear-gradient(#f9f9f9 /*{g-body-background-start}*/, #eeeeee
+		/*{g-body-background-end}*/); /* Opera 11.10+ */
+	background-image: linear-gradient(#f9f9f9 /*{g-body-background-start}*/, #eeeeee
+		/*{g-body-background-end}*/);
+}
+/* body.ui-mobile-viewport, div.ui-mobile-viewport{
+	overflow-x:visible;
+} */
+.ui-bar-a a.ui-link {
+	color: #4E443E;
+	text-shadow: none;
+}
+
+html {
+	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+	background: #eee;
+}
+/* .ie html{
+	background:#f9f9f9;
+} */
+:focus {
+	outline: medium none;
+}
+
+a:visited, a:link {
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+	color: #2D69C1;
+}
+
+a {
+	color: #4E443E;
+	border: 0 none;
+	padding: 0;
+	text-decoration: none;
+}
+
+a#audioCaptcha:hover, a#audioCaptcha:active, a#audioCaptcha:focus {
+	text-decoration: none;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	line-height: auto;
+	overflow-x: visible;
+	margin: 0;
+}
+/*this set image resize animation*/
+body, img {
+	transition: all 0s linear 0s;
+}
+
+/*make the selection box text wrap*/
+.ui-select .ui-btn-text {
+	text-align: left;
+	text-overflow: clip;
+	white-space: normal !important;
+}
+
+.en, .en input, .en select {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.tc, .tc input, .tc select {
+	font-family: PMingLiu, MingLiu, Arial, Helvetica, sans-serif;
+}
+
+.sc, .sc input, .sc select {
+	font-family: PMingLiu, MingLiu, Arial, Helvetica, sans-serif;
+}
+
+[lang|="en"] {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+[lang|="zh"] {
+	font-family: PMingLiu, MingLiu, Arial, Helvetica, sans-serif;
+}
+
+.optionsSeperator {
+	border-left: 1px solid #999999;
+	margin: 0 5px 0 1px;
+}
+
+.top-heading {
+	background: none repeat scroll 0 0 #FFFFFF;
+	/*margin: 0px -2px;*/
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	position: relative;
+	height: auto;
+	line-height: auto !important;
+}
+
+.floatedWrapper {
+	overflow: hidden;
+	width: 100%;
+	height: 1.6em;
+}
+
+.hr {
+	color: #E4E4E2;
+	/*border-top:2px #C9C9C7 solid;*/
+	padding-bottom: 10px;
+	background: url('../images/mygovhk/common/footer/divider.png') repeat-x;
+	position: relative;
+}
+
+/* High Res devices
+ ---------------------------------------------------------*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) , only screen and
+		(min-device-pixel-ratio : 1.5) , only screen and
+		(min--moz-device-pixel-ratio : 1.5) , only screen and
+		(-o-min-device-pixel-ratio: 3/2) , only screen and (min-resolution:
+	1.5dppx) {
+	.hr {
+		color: #E4E4E2;
+		/*border-top:2px #C9C9C7 solid;*/
+		padding-bottom: 10px;
+		background: url('../images/mygovhk/common/footer/divider@2x.png')
+			repeat-x;
+		background-size: 1px;
+		position: relative;
+	}
+}
+
+#footer-text {
+	bottom: 0;
+	float: left;
+	padding: 0 0 20px;
+	position: relative;
+	text-align: left;
+}
+
+ul#footer-menu {
+	margin: 0;
+	padding: 0;
+}
+
+#footer-menu li {
+	/*border-right: 1px solid #CCCCCC;*/
+	display: block;
+	/*float: left;*/
+	line-height: 35px;
+	height: 35px;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-right: 5px;
+	padding: 0px 0px 0px 40px;
+	background: url('../images/mygovhk/common/footer/icon_arrow.png') 5px
+		2px no-repeat;
+	background-size: 30px;
+}
+/* High Res devices
+ ---------------------------------------------------------*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) , only screen and
+		(min-device-pixel-ratio : 1.5) , only screen and
+		(min--moz-device-pixel-ratio : 1.5) , only screen and
+		(-o-min-device-pixel-ratio: 3/2) , only screen and (min-resolution:
+	1.5dppx) {
+	#footer-menu li {
+		/*border-right: 1px solid #CCCCCC;*/
+		display: block;
+		/*float: left;*/
+		line-height: 35px;
+		height: 35px;
+		list-style-position: outside;
+		list-style-type: none;
+		margin-right: 5px;
+		padding: 0px 0px 0px 40px;
+		background: url('../images/mygovhk/common/footer/icon_arrow@2x.png') 5px
+			2px no-repeat;
+		background-size: 30px;
+	}
+	#footer-menu li:hover {
+		background: url('../images/mygovhk/common/footer/icon_arrow_on@2x.png')
+			5px 2px no-repeat;
+	}
+}
+
+.access {
+	left: -9999px;
+	margin-bottom: 0;
+	position: absolute;
+	top: -9999px;
+}
+
+#footer-menu li:hover {
+	background: url('../images/mygovhk/common/footer/icon_arrow_on.png')
+		no-repeat scroll 5px 2px transparent;
+}
+/*
+.tc #footer-menu li, .sc #footer-menu li {
+    margin-right: 8px;
+    padding: 0 8px 0 0;
+}
+*/
+#footer-menu li:last-child {
+	border: medium none;
+	/*padding: 0;*/
+}
+
+#w3 {
+	clear: left;
+	float: left;
+}
+
+#w3 img {
+	border: 0 none;
+}
+
+.footerImg_focus {
+	border: 1px solid #4D90FE !important;
+}
+
+#brandhk {
+	clear: right;
+	float: right;
+	margin-right: 2px;
+}
+
+#brandhk img {
+	border: 0 none;
+}
+
+#lang li {
+	display: inline;
+	float: left;
+	list-style-position: outside;
+	list-style-type: none;
+	padding: 0 20px 0 0;
+	text-decoration: none;
+	color: #3F3631;
+}
+
+#lang li .alink {
+	text-decoration: none;
+	color: #4E443E;
+	border-bottom: 1px solid;
+}
+
+#lang li .alink:hover, #lang li .alink:focus {
+	text-decoration: none;
+	color: #2D69C1;
+}
+
+#lang li sup {
+	margin-left: -5px;
+}
+
+#lang li:first-child {
+	text-decoration: none;
+	margin-right: -5px;
+	padding-left: 10px;
+}
+
+#lang li:last-child {
+	padding: 0;
+}
+
+#mygovhklogo {
+	height: 30px;
+	padding-top: 10px;
+}
+
+#top-tool-bar {
+	/*font-size: 100%;
+    margin: 5px 0px;
+	width:90%;*/
+	margin-top: 5px;
+}
+
+.ui-inline {
+	line-height: 20px;
+}
+
+#ttb-container ul {
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+/*
+#announcement {
+	color:#FFF;
+	text-shadow:none;
+}
+*/
+#announcement {
+	color: #FFF;
+	text-shadow: none;
+	background: url("../images/mygovhk/registration/header1_mid.png")
+		repeat-x;
+	background-size: 3px;
+	color: white;
+	height: 42px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 42px;
+	margin-left: 0px;
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
+	border-radius: 8px;
+	width: 100%;
+	display: inline-block;
+}
+
+#announcement .createAcctHeading {
+	float: left;
+	padding-left: 5px;
+}
+/*
+#announcement .stepTable{
+	margin-top: -58px;
+	margin-left: 165px;
+	padding-top: 7px;
+}
+*/
+#announcement .sep {
+	background: white;
+	width: 10px;
+	height: 2px;
+	margin-left: 4px;
+	margin-right: 4px;
+	position: relative;
+	top: 50%;
+	float: left;
+}
+
+#announcement .currentStep {
+	float: left;
+	font-size: 12px;
+	position: relative;
+	text-align: center;
+}
+
+#announcement .currentStep span {
+	font-size: 18px;
+}
+
+.h1-title {
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: bold;
+	line-height: 42px;
+}
+
+table, tbody, tr, td, th {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	vertical-align: middle;
+}
+
+.table {
+	display: table
+}
+
+.tr {
+	display: table-row
+}
+
+.thead {
+	display: table-header-group
+}
+
+.tbody {
+	display: table-row-group
+}
+
+.tfoot {
+	display: table-footer-group
+}
+
+.col {
+	display: table-column
+}
+
+.colgroup {
+	display: table-column-group
+}
+
+.td, .th {
+	display: table-cell;
+	vertical-align: middle
+}
+
+.caption {
+	display: table-caption
+}
+
+.eastable {
+	display: table
+}
+
+.eastr {
+	display: table-row
+}
+
+.easthead {
+	display: table-header-group
+}
+
+.eastbody {
+	display: table-row-group
+}
+
+.eastfoot {
+	display: table-footer-group
+}
+
+.eascol {
+	display: table-column
+}
+
+.eascolgroup {
+	display: table-column-group
+}
+
+.eastd, .easth {
+	display: table-cell;
+	vertical-align: middle
+}
+
+.eascaption {
+	display: table-caption
+}
+
+.url {
+	color: #4E443E;
+	background: url('../images/mygovhk/common/arrow_right.png') 3px 7px
+		no-repeat;
+	/*background-size: 35px;*/
+	padding-left: 36px;
+	line-height: 35px;
+	display: block;
+}
+/* High Res devices
+ ---------------------------------------------------------*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) , only screen and
+		(min-device-pixel-ratio : 1.5) , only screen and
+		(min--moz-device-pixel-ratio : 1.5) , only screen and
+		(-o-min-device-pixel-ratio: 3/2) , only screen and (min-resolution:
+	1.5dppx) {
+	.url {
+		color: #4E443E;
+		background: url('../images/mygovhk/common/arrow_right@2x.png') 0px 7px
+			no-repeat;
+		background-size: 25px;
+		padding-left: 40px;
+		line-height: 35px;
+		display: block;
+	}
+}
+
+.url a:hover {
+	color: #4E443E;
+	text-decoration: none;
+}
+
+.urlDiv:hover {
+	background: #D2D1CA;
+	border-radius: 18px 18px 18px 18px;
+}
+
+.agree-terms-of-use {
+	font-size: 15px;
+	font-weight: bold;
+	margin: 10px 10px 10px 10px;
+	/*
+	padding-top:5px;
+	*/
+}
+
+#lite-h2-title-gray, .lite-h2-title-gray {
+	background: url("../images/mygovhk/registration/header2_mid.png")
+		repeat-x;
+	height: auto;
+	color: #3F3430;
+	line-height: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 10px;
+	/*
+    margin: 1px;
+    padding: 3px 0 3px 3px;
+    text-shadow: 1px 1px 3px #FFFFFF;
+	*/
+	font-weight: normal;
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
+	border-radius: 8px;
+}
+
+#lite-h2-title-gray.twolines {
+	/*background-size:auto 100%;*/
+	background:
+		url('../images/mygovhk/registration/header2_with_collapsible_mid.png')
+		repeat-x;
+	line-height: 22px;
+	padding: 7px 15px 7px 15px;
+}
+
+/* High Res devices
+ ---------------------------------------------------------*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) , only screen and
+		(min-device-pixel-ratio : 1.5) , only screen and
+		(min--moz-device-pixel-ratio : 1.5) , only screen and
+		(-o-min-device-pixel-ratio: 3/2) , only screen and (min-resolution:
+	1.5dppx) {
+	#lite-h2-title-gray, .lite-h2-title-gray {
+		background: url("../images/mygovhk/registration/header2_mid@2x.png")
+			repeat-x;
+		background-size: auto 40px;
+		height: auto;
+		color: #3F3430;
+		line-height: 40px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 2px;
+		margin-right: 2px;
+		margin-bottom: 10px;
+		/*
+		margin: 1px;
+		padding: 3px 0 3px 3px;
+		text-shadow: 1px 1px 3px #FFFFFF;
+		*/
+		font-weight: normal;
+		-webkit-border-bottom-right-radius: 8px;
+		-webkit-border-bottom-left-radius: 8px;
+		-webkit-border-top-right-radius: 8px;
+		-webkit-border-top-left-radius: 8px;
+		border-radius: 8px;
+	}
+	#lite-h2-title-gray.twolines {
+		/*background-size:auto 100%;*/
+		background:
+			url('../images/mygovhk/registration/header2_with_collapsible_mid@2x.png')
+			repeat-x;
+		background-size: auto 58px;
+		line-height: 22px;
+		padding: 7px 15px 7px 15px;
+	}
+}
+
+h2 {
+	font-size: 20px;
+	margin: 10px 0px 10px 5px;
+	font-size: 20px;
+	text-shadow: none;
+}
+
+#content {
+	border-width: 0;
+	/* overflow-x: hidden;
+    overflow-y: visible;*/
+	position: relative;
+}
+
+#content a {
+	text-decoration: underline;
+}
+
+#terms-of-use-box-scroll #scroller p {
+	word-wrap: break-word;
+}
+
+h3 {
+	color: black;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 8px 0 8px 5px;
+}
+
+.icon_checkbox_on {
+	background: url("../images/mygovhk/login/checkbox_on.png") no-repeat 0 0;
+	cursor: pointer;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 30px;
+	position: relative;
+}
+
+.icon_checkbox_off {
+	background: url("../images/mygovhk/login/checkbox_off.png") no-repeat 0
+		0;
+	cursor: pointer;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 30px;
+	position: relative;
+}
+
+.tcChkBoxError {
+	border: solid;
+	border-width: 1px !important;
+	border-color: red !important;
+}
+
+.icon_checkbox_focus {
+	border: solid;
+	border-width: 1px !important;
+	border-color: #4D90FE !important;
+}
+
+.actionContent {
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+.submitShortBtn {
+	background: url("../images/mygovhk/registration/btn_01.png") 0px 1px
+		no-repeat;
+	background-size: 150px;
+	width: 150px;
+	height: 38px;
+	border: transparent;
+	color: #EEEEEE;
+	font-size: 15px;
+	font-weight: bold;
+	text-shadow: none;
+	cursor: pointer;
+}
+
+.submitShortBtn:hover, .submitShortBtn:focus {
+	background: url("../images/mygovhk/registration/btn_01_over.png") 0px
+		1px no-repeat;
+	background-size: 150px;
+	width: 150px;
+	height: 38px;
+	border: transparent;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.submitShortBtn2 {
+	background: url("../images/mygovhk/registration/btn_02.png") 2px 0px
+		no-repeat;
+	background-size: 90px 38px;
+	width: 95px;
+	height: 36px;
+	border: none;
+	color: #EEEEEE;
+	font-size: 15px;
+	text-decoration: none;
+	padding-bottom: 1px;
+	text-align: center;
+	cursor: pointer;
+	padding-left: 0;
+	padding-right: 0;
+	/*
+    font-family: Arial,Helvetica,sans-serif;
+    */
+}
+
+.submitShortBtn2_hover, .submitShortBtn2:hover {
+	background: url("../images/mygovhk/registration/btn_02_over.png") 2px
+		0px no-repeat;
+	background-size: 90px 38px;
+	width: 95px;
+	height: 36px;
+	border: none;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-bottom: 1px;
+	text-align: center;
+}
+
+.submitShortBtn2_focus, .submitShortBtn2:active, .submitShortBtn2:focus
+	{
+	background: url("../images/mygovhk/registration/btn_02_on.png") 2px 0px
+		no-repeat;
+	background-size: 90px 38px;
+	width: 95px;
+	height: 36px;
+	border: none;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-bottom: 1px;
+	text-align: center;
+}
+/* High Res devices
+ ---------------------------------------------------------*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) , only screen and
+		(min-device-pixel-ratio : 1.5) , only screen and
+		(min--moz-device-pixel-ratio : 1.5) , only screen and
+		(-o-min-device-pixel-ratio: 3/2) , only screen and (min-resolution:
+	1.5dppx) {
+	.submitShortBtn {
+		/*background: url("login_btn.png") repeat-x scroll 50% 50% #555555;*/
+		background: url("../images/mygovhk/registration/btn_01@2x.png") 0px 2px
+			no-repeat;
+		background-size: 150px;
+		width: 150px;
+		height: 38px;
+		border: none;
+		/*
+		border: 1px solid #666666;
+		border-radius: 5px 5px 5px 5px;
+		*/
+		color: #EEEEEE;
+		font-size: 15px;
+		font-weight: bold;
+		text-shadow: none;
+		cursor: pointer;
+		/*
+		margin: 10px 7px 0 0;
+		outline: medium none;
+		padding: 6px 30px;
+		*/
+	}
+	.submitShortBtn:hover, .submitShortBtn:focus {
+		/*
+		position: relative;
+		top: 1px;
+		*/
+		background: url("../images/mygovhk/registration/btn_01_on@2x.png") 0px
+			2px no-repeat;
+		background-size: 150px;
+		width: 150px;
+		height: 38px;
+		border: none;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	.submitShortBtn2 {
+		background: url("../images/mygovhk/registration/btn_01@2x.png") 2px -1px
+			no-repeat;
+		background-size: 90px 32px;
+		width: 95px;
+		height: 30px;
+		border: none;
+		color: #EEEEEE;
+		font-size: 15px;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.submitShortBtn2:hover, .submitShortBtn2_hover {
+		background: url("../images/mygovhk/registration/btn_01_over@2x.png") 2px
+			-1px no-repeat;
+		background-size: 90px 32px;
+		width: 95px;
+		height: 30px;
+		border: none;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	.submitShortBtn2:active, .submitShortBtn2:focus, .submitShortBtn2_focus
+		{
+		background: url("../images/mygovhk/registration/btn_01_on@2x.png") 2px
+			-1px no-repeat;
+		background-size: 90px 32px;
+		width: 95px;
+		height: 30px;
+		border: none;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	.icon_checkbox_on {
+		background: url("../images/mygovhk/login/checkbox_on@2x.png") no-repeat
+			0 0;
+		background-size: 30px 30px;
+		cursor: pointer;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		width: 30px;
+		position: relative;
+	}
+	.icon_checkbox_off {
+		background: url("../images/mygovhk/login/checkbox_off@2x.png") no-repeat
+			0 0;
+		background-size: 30px 30px;
+		cursor: pointer;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		width: 30px;
+		position: relative;
+	}
+}
+
+input[type="text"], .ui-selectonemenu-label, input[type="password"],
+	.deleteBtn.bw {
+	color: #000000;
+	font-size: inherit;
+}
+
+.ui-input-text, .ui-corner-all, .ui-btn-shadow {
+	
+}
+
+.ui-shadow-inset {
+	box-shadow: none;
+}
+
+.ui-body-g, .ui-overlay-g {
+	background: none;
+	border: none;
+	color: none;
+	text-shadow: none;
+}
+
+.ui-input-text.ui-focus, .ui-input-search.ui-focus {
+	box-shadow: none;
+}
+
+/*Registration step two*/
+.ui-formfield-br {
+	padding-left: 10px;
+	margin-right: 10px;
+}
+
+.ui-formfield-br .ui-btn-inline {
+	padding: 10px 0px 5px 0px;
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.ui-formfield-br.mobileNum  .ui-btn-inline {
+	padding: 0px;
+}
+
+.ui-formfield-br.mobileNum  table {
+	margin-bottom: -5px;
+}
+
+.ui-formfield-br .ui-btn-inline label {
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+div.ui-input-text input.ui-body-g {
+	background-color: #FFFFFF;
+	border-color: #C0C0C0 #D9D9D9 #D9D9D9;
+	border-radius: 18px 18px 18px 18px;
+	border-style: solid;
+	border-width: 1px;
+	height: 27px;
+	line-height: 27px;
+	width: 100%;
+	/*
+    text-indent:10px;
+    */
+	padding: 0.4em 10px;
+}
+
+div.ui-input-text input.ui-body-g:focus, div.ui-input-text input.ui-body-g:hover
+	{
+	background-color: #FFFFFF;
+	border-color: #4D90FE !important;
+	border-radius: 18px 18px 18px 18px;
+	border-style: solid;
+	border-width: 1px;
+	height: 27px;
+	line-height: 27px;
+	width: 100%;
+}
+
+div.ui-input-text input.ui-body-h {
+	background-color: #FFFFFF;
+	/*   border-color: #C0C0C0 #D9D9D9 #D9D9D9;*/
+	border-color: red;
+	border-radius: 18px 18px 18px 18px;
+	border-style: solid;
+	border-width: 1px;
+	height: 27px;
+	line-height: 27px;
+	width: 100%;
+	/*
+    text-indent:10px;
+    */
+	padding: 0.4em 10px;
+}
+
+/* ie 8 selection box expand outside,set overflow the rest of the content will be invisible*/
+.ui-field-contain .ui-controlgroup-horizontal .ui-select div {
+	overflow: hidden;
+	width: auto;
+}
+/*selection option width auto expand*/
+.ui-field-contain .ui-controlgroup-horizontal .ui-select .ui-btn select
+	{
+	width: auto;
+}
+
+.selectionDropDown {
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	background: url("../images/mygovhk/registration/btn_dropdown_04.png")
+		repeat-x scroll 0 0 #EFEFEF;
+	border: 1px solid #A9A9A9;
+	border-radius: 20px 20px 20px 20px;
+	min-height: 43px;
+	display: inline-block;
+}
+
+.selectionDropDown select {
+	border: none;
+	height: inherit;
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+	cursor: pointer;
+	min-height: 100%;
+	min-width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: none repeat scroll 0 0 white;
+	opacity: 0;
+	-ms-filter: "alpha(opacity=0)"; /* ie 8 */
+	filter: alpha(opacity = 0); /* ie lt 7 */
+	-khtml-opacity: 0; /* safari 1.x */
+	-moz-opacity: 0; /* ff lt 1.5, netscape */
+}
+
+.selectionDropDown span {
+	background: url("../images/mygovhk/registration/icon_down1.png")
+		no-repeat scroll 7px center transparent;
+	border-left: 1px solid #D2D2D2;
+	position: absolute;
+	width: 35px;
+	height: 100%;
+	overflow: hidden;
+	/*width: 8%;*/
+	width: 30px;
+}
+
+.selectionDropDown.error span {
+	border-color: red;
+	background: url("../images/mygovhk/registration/icon_down1_on.png")
+		no-repeat scroll 7px center transparent;
+}
+
+.iconDropDown {
+	margin: 0 auto;
+	min-height: 43px;
+	background: none repeat scroll 0 0 transparent;
+	height: 43px;
+	min-height: 43px;
+	overflow: hidden;
+	position: relative;
+	width: 25px;
+	z-index: 1;
+}
+
+.iconDropDown select {
+	border: none;
+	height: inherit;
+	width: auto;
+	left: 0;
+	margin: 0;
+	top: 0;
+	position: relative;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: none repeat scroll 0 0 white;
+	opacity: 0;
+	-ms-filter: "alpha(opacity=0)"; /* ie 8 */
+	filter: alpha(opacity = 0); /* ie lt 7 */
+	-khtml-opacity: 0; /* safari 1.x */
+	-moz-opacity: 0; /* ff lt 1.5, netscape */
+	min-height: inherit;
+	min-width: inherit;
+	z-index: 3;
+}
+
+.iconDropDown span {
+	margin-top: 10px;
+	background: url("../images/mygovhk/registration/icon_down1.png")
+		no-repeat scroll 0 center transparent;
+	height: 25px;
+	min-height: 25px;
+	min-width: 25px;
+	overflow: hidden;
+	position: absolute;
+	width: 25px;
+}
+
+/*part of header.css*/
+.header-logo-container {
+	background-image: url("../images/EditAddress.png");
+	background-size: 34px 30px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 34px;
+	z-index: 0;
+	margin-left: 10px;
+	margin-right: 6px;
+	float: left;
+}
+
+.header-title {
+	float: left;
+	padding-top: 8px;
+	font-size: 19px !important;
+	font-weight: bold;
+}
+
+.header-title-grey {
+	color: #4C4C4E;
+}
+
+.header-title-orange {
+	color: #FF9900;
+}
+
+.submitShortBtn2, .submitShortBtn0 {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+div.ui-input-text {
+	padding: 0 30px 0px 0px;
+}
+
+#content {
+	margin: 0 3px;
+}
+
+/*part of common.css*/
+.en, .en input, .en select {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.tc, .tc input, .tc select {
+	/*font-family:\5FAE\8EDF\6B63\9ED1\9AD4,Microsoft JhengHei,MingLiU,sans-serif;*/
+	font-family: PMingLiu, MingLiu, Arial, Helvetica, sans-seri;
+}
+
+.sc, .sc input, .sc select {
+	/*font-family:Microsoft YaHei,SimSun,sans-serif;*/
+	font-family: PMingLiu, MingLiu, Arial, Helvetica, sans-seri;
+}
+
+.border {
+	border: 1px solid #4D90FE !important;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+@media all\0 {
+	.ui-mobile, .ui-mobile body {
+		/* height: 101%; */
+		
+	}
+} /* IE8 uses \0 */
+h1 {
+	font-size: 1.188em;
+}
+
+.mymenu-ul li, h2 {
+	font-size: 1.125em;
+}
+
+.full {
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.hidden, .ui-hidden, .none {
+	display: none;
+}
+
+.relative {
+	position: relative;
+}
+
+.focus {
+	border-color: #4D90FE !important;
+	border-image: none;
+	border-style: solid !important;
+	border-width: 1px !important;
+}
+
+.table {
+	display: table
+}
+
+.tr {
+	display: table-row
+}
+
+.thead {
+	display: table-header-group
+}
+
+.tbody {
+	display: table-row-group
+}
+
+.tfoot {
+	display: table-footer-group
+}
+
+.col {
+	display: table-column
+}
+
+.colgroup {
+	display: table-column-group
+}
+
+.td, .th {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.caption {
+	display: table-caption
+}
+
+.eastable {
+	display: table
+}
+
+.eastr {
+	display: table-row
+}
+
+.easthead {
+	display: table-header-group
+}
+
+.eastbody {
+	display: table-row-group
+}
+
+.eastfoot {
+	display: table-footer-group
+}
+
+.eascol {
+	display: table-column
+}
+
+.eascolgroup {
+	display: table-column-group
+}
+
+.eastd, .easth {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.eascaption {
+	display: table-caption
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+/****************************accessibilty**********************/
+#access, .access {
+	font-size: 100%;
+	font-weight: 400;
+	left: -9999px !important;
+	margin-bottom: 0 !important;
+	position: absolute !important;
+	/* top: -9999px !important; */
+}
+
+/**************************** breadcrumb ***********************/
+.icon-home {
+	background: url("../images/mygovhk/common/icon_home.png") no-repeat
+		scroll 50% 50% transparent;
+	float: left;
+	height: 25px;
+	margin: 0px 5px;
+	width: 20px;
+}
+
+.breadcrumb {
+	background-repeat: repeat-x;
+	border: 0 none;
+	margin: 15px 0;
+}
+
+/* .breadcrumb .icon-arrow {
+    background: url("../images/mygovhk/common/img_arrow.png") repeat-x scroll 0 10px transparent;
+    float: left;
+    height: 30px;
+    margin-right: 5px;
+    width: 6px;
+} */
+.breadcrumb-ul {
+	line-height: 25px;
+	margin: 0;
+	padding: 0;
+}
+
+.breadcrumb-ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+.breadcrumb-ul .breadcrumb-arrow {
+	background: url("../images/mygovhk/common/img_arrow.png") no-repeat
+		scroll 0 50% transparent;
+	background-size: 6px 10px;
+	height: 25px;
+	width: 6px;
+	padding-left: 15px;
+}
+
+.breadcrumb-ul li:last-child {
+	
+}
+
+.breadcrumb-ul a {
+	color: #454545;
+	text-decoration: none;
+}
+
+.breadcrumb-ul .breadcrumb-next {
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.breadcrumb-ul a img {
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.mymenu-button {
+	border-radius: 3px;
+	margin: 0px 5px 0 0;
+	box-shadow: 0 1px 1px 0 #000000 inset;
+	float: left;
+}
+
+.ui-btn-mymenu {
+	display: block;
+	text-indent: -9999px;
+	color: transparent;
+	background: url("../images/mygovhk/common/btn_menu.png") no-repeat
+		scroll center center;
+	width: 15px;
+}
+
+.h1-title {
+	vertical-align: middle;
+	color: #3f3530;
+	padding: 0px 4px 0px 4px;
+	z-index: 999;
+	margin-bottom: 0px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	font-weight: normal;
+	color: #ffffff;
+	text-shadow: 0 1px 0 #444444;
+	background:
+		url("../images/mygovhk/common/header1_with_collapsible_mid.png")
+		repeat-x scroll 0 -2px #A34B01;
+	height: 43px;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid #AB4E0D;
+}
+
+.dropdown-container:focus, .h1-title.ui-collapsible-heading:focus,
+	.dropdown-container:hover, .h1-title.ui-collapsible-heading:hover {
+	background-image:
+		url("../images/mygovhk/common/header1_with_collapsible_mid_over.png");
+}
+/* .h1-title_focus, .h1-title:focus, .h1-title:hover, .h1-title.focus, .h1-title.hover{
+	background-image: url("../images/mygovhk/common/header1_with_collapsible_mid_over.png");
+} */
+
+/**************************** loading ****************************/
+.ui-loader-background {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	margin: 0;
+	background: url("../images/mygovhk/common/loading002.gif") no-repeat
+		scroll center center/100px 100px rgba(155, 155, 155, 0.2);
+	background-image: url("../images/mygovhk/common/loading002.gif") \9;
+	background-color: #9B9B9B\9;
+	background-position: center\9;
+	background-repeat: no-repeat\9;
+	-moz-opacity: 0.20\9;
+	opacity: .20\9;
+	filter: alpha(opacity = 20) \9;
+	display: none;
+	position: fixed;
+	z-index: 999999;
+}
+
+.ui-loading .ui-loader-background {
+	display: block;
+}
+
+/**************************** error panel*************************/
+#jte {
+	border: 1px solid #96250E;
+	border-radius: 8px;
+	padding: 0;
+	margin-top: 2px;
+}
+
+#errorMsgContent {
+	color: #97250F;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+#errorMsgTitle {
+	font-weight: bold;
+	line-height: 15px;
+	padding: 0 10px;
+}
+
+div#errorList {
+	margin: 0;
+	padding: 0 10px;
+}
+
+#errorMsgContent div#errorMsg {
+	margin: 0;
+	padding: 0;
+}
+
+#errorMsgContent div#errorMsg li a {
+	color: #97250F;
+	display: inline;
+	font-weight: lighter;
+	text-decoration: underline;
+}
+
+#errorMsgContent a {
+	color: #97250F;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.err-msg {
+	font-size: 14px;
+	color: #97250F;
+}
+
+.err-contain {
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#regErrorMsgTitle .ui-ul-nav li {
+	line-height: 2em;
+}
+
+#regErrorMsg {
+	border: 1px solid #96250E;
+	padding: 0px 0px;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+#regErrorMsgContent {
+	color: #97250F;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#regErrorMsgContent a {
+	color: #97250F;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#regErrorMsgTitle {
+	padding: 0px 10px;
+	line-height: 15px;
+}
+
+ol#regErrorList {
+	margin: 0;
+	padding: 0px 10px;
+}
+
+#regErrorMsgContent ul {
+	list-style-position: inside;
+	list-style-type: disc;
+	margin: 0;
+	padding-top: 5px;
+}
+
+#regErrorMsgContent div#errorMsg {
+	margin: 0;
+	padding: 0;
+}
+
+#regErrorMsgContent div#errorMsg li {
+	display: inline;
+}
+
+#regErrorMsgContent div#errorMsg li a {
+	color: #97250F;
+	text-decoration: underline;
+	display: inline;
+	font-weight: lighter;
+}
+
+/**************************** footer *****************************/
+.footer-w3c {
+	width: 88px;
+	height: 31px;
+	margin: 0 0 0 5px;
+	background-image: url('../images/mygovhk/common/footer/wcag2AA.gif');
+}
+
+#w3cLink, #brandhkLink {
+	display: inline-block;
+	width: inherit;
+	height: inherit;
+}
+
+.footer_brandhk_focus, .footer-w3c_focus {
+	border: 1px solid #4D90FE !important;
+}
+
+.footer-brandhk {
+	width: 172px;
+	height: 64px;
+	background-image: url('../images/mygovhk/common/footer/brandhk.gif');
+}
+
+.icon-container {
+	width: 100%;
+	display: inline-block;
+}
+
+#footer .backtotop {
+	background: transparent
+		url("../images/mygovhk/common/footer/back_to_top.png") no-repeat
+		scroll 0 -1px;
+	padding-left: 25px;
+	display: inline-block;
+	height: 25px;
+	color: #4E443E;
+	margin: 0 0 10px 0;
+}
+
+#footer #common_top {
+	color: #4E443E;
+}
+
+#footer #common_top:hover, #footer #common_top:active, #footer #common_top:focus
+	{
+	color: #2D69C1 !important;
+}
+
+#navbar .ui-footer-fixed {
+	background: #CCCCCC;
+	border: 0px solid #FFF;
+	font-weight: none;
+}
+
+.footer-bottom {
+	margin: 20px 0 0 0;
+}
+
+.footer-bottom a:focus img {
+	border: 1px solid #2D69C1;
+}
+
+#w3cLink:focus, #brandhkLink:focus {
+	border: 1px solid #2D69C1 \9;
+	box-shadow: 0px 0px 0px 1px #2D69C1;
+}
+
+/**************************** drop down **************************/
+.ui-fullsize .ui-btn-inner {
+	padding: 0px;
+	line-height: 33px;
+}
+
+.ui-collapsible-heading>.ui-btn {
+	-moz-border-radius: 8x;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.ui-collapsible-content {
+	padding: 0px 0px;
+}
+
+.ui-collapsible-content p {
+	margin-left: 10px;
+}
+
+.ui-collapsible-inset .ui-collapsible-heading .ui-btn {
+	border-right-width: 0px;
+	border-left-width: 0px;
+}
+
+.ui-collapsible-themed-content:not (.ui-collapsible-collapsed ) >.ui-collapsible-heading
+	{
+	-webkit-border-bottom-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+h3.subtitle.ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner {
+	line-height: 43px;
+	padding-left: 25px;
+}
+
+h3.subtitle a {
+	border-width: 0px 0px 0px 0px;
+}
+
+h3.subtitle.ui-collapsible-heading .ui-icon-arrow-d {
+	margin-left: 15px;
+	height: 35px;
+	width: 35px;
+	background: url('../images/mygovhk/common/arrow_up.png') 3px 3px
+		no-repeat;
+}
+
+h3.subtitle.ui-collapsible-heading-collapsed .ui-icon {
+	margin-left: 15px;
+	height: 35px;
+	width: 35px;
+	background: url('../images/mygovhk/common/arrow_down.png') 3px 3px
+		no-repeat;
+}
+
+.collapsiblelevel3 {
+	padding: 5px 5px 5px 25px;
+	border-top: 0px solid #fff;
+	border-left: 0px solid #fff;
+	border-right: 0px solid #fff;
+	border-bottom: 0px solid #fff;
+	border-color: #fff;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.ui-li .ui-btn-text a.ui-link-inherit.notice-msg {
+	display: inline-block;
+}
+
+.gecko .notice-msg span, .ie .gecko .notice-msg span {
+	/* margin-top: -5px */
+	
+}
+/*
+.notice-msg span{
+	color: #B65A2F;
+	background: url('../images/mygovhk/common/bg_msg.png')  0 0 no-repeat;
+	background-size: 27px;
+	text-align: center;
+	line-height: 27px;
+	width: 27px;
+	height: 27px;
+	float: right;
+	margin-left: 10px;
+	margin-top: -23px;
+    (-bracket-:hack;
+    	margin-top: -20px;
+	);	
+	margin-top: -5px\12;
+}
+*/
+
+/**************************** Button **************************/
+.submitBtn {
+	background: url("../images/mygovhk/common/btn_02.png") 0px 0px no-repeat;
+	background-size: 180px;
+	width: 180px;
+	height: 38px;
+	border: none;
+	color: #EEEEEE;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.submitBtn:hover {
+	background: url("../images/mygovhk/common/btn_02_over.png") 0px 0px
+		no-repeat;
+	background-size: 180px;
+}
+
+.submitBtn:focus {
+	background: url("../images/mygovhk/common/btn_02_over.png") 0px 0px
+		no-repeat;
+	background-size: 180px;
+}
+
+.submitBtn:active {
+	background: url("../images/mygovhk/common/btn_02_on.png") 0px 0px
+		no-repeat;
+	background-size: 180px;
+}
+
+/*submitShortBtn0 for short btn under high resolution*/
+.submitShortBtn0 {
+	background: url("../images/mygovhk/common/btn_01.png") 0px 0px no-repeat;
+	background-size: 150px 38px;
+	width: 150px;
+	height: 38px;
+	border: none;
+	color: #EEEEEE;
+	font-weight: bold;
+	margin: 0.5em 0;
+	cursor: pointer;
+}
+
+.submitShortBtn0_focus, .submitShortBtn0:hover, .submitShortBtn0:active,
+	.submitShortBtn0:focus {
+	background: url("../images/mygovhk/common/btn_01_on.png") 0px 0px
+		no-repeat;
+	background-size: 150px 38px;
+}
+
+.submitShortBtn04 {
+	background: url("../images/mygovhk/common/btn_04.png") 0px 0px no-repeat;
+	background-size: 150px 38px;
+	background-size: 128px 38px\9; /*IE8+*/
+	width: 150px;
+	width: 128px\9; /*IE8+*/
+	height: 38px;
+	border: none;
+	color: #EEEEEE;
+	font-weight: bold;
+	margin: 0.5em 0;
+	cursor: pointer;
+	padding-left: 3px\0; /*IE8,9,10*/
+	padding-right: 3px\0; /*IE8,9,10*/
+}
+
+.submitShortBtn04_focus, .submitShortBtn04:hover, .submitShortBtn04:active,
+	.submitShortBtn04:focus {
+	background: url("../images/mygovhk/common/btn_04_on.png") 0px 0px
+		no-repeat;
+	background-size: 150px 38px;
+	background-size: 128px 38px\9; /*IE8+*/
+	width: 150px;
+	width: 128px\9; /*IE8+*/
+	height: 38px;
+}
+
+.submitShortBtn {
+	background: url("../images/mygovhk/common/btn_01.png") 0px 0px no-repeat;
+	background-size: 150px 38px;
+	width: 150px;
+	height: 38px;
+	border: none;
+	color: #EEEEEE;
+	font-weight: bold;
+	margin: 0.5em 0;
+	cursor: pointer;
+}
+
+.submitShortBtn_focus, .submitShortBtn:hover, .submitShortBtn:active,
+	.submitShortBtn:focus {
+	background: url("../images/mygovhk/common/btn_01_on.png") 0px 0px
+		no-repeat;
+}
+
+/*************************** checkbox ***************************/
+.checkbox-on {
+	background-image: url("../images/mygovhk/common/checkbox_on.png");
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	/*background-size: 28px auto;*/
+	margin-top: -5px;
+	margin-right: 3px;
+	vertical-align: text-bottom;
+}
+
+.checkbox-off {
+	background-image: url("../images/mygovhk/common/checkbox_off.png");
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	/*background-size: 28px auto;*/
+	margin-top: -5px;
+	margin-right: 3px;
+	vertical-align: text-bottom;
+}
+
+.radio-on {
+	background-image: url("../images/mygovhk/common/radiobtn_on.png");
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-size: 15pt auto;
+	margin-right: 3px;
+}
+
+.radio-off {
+	background-image: url("../images/mygovhk/common/radiobtn_off.png");
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-size: 15pt auto;
+	margin-right: 3px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) , only screen and
+		(min-device-pixel-ratio : 1.5) , only screen and
+		(min--moz-device-pixel-ratio : 1.5) , only screen and
+		(-o-min-device-pixel-ratio: 3/2) , only screen and (min-resolution:
+	1.5dppx) {
+	.submitShortBtn0 {
+		background: url("../images/mygovhk/common/btn_01@2x.png") 0px 0px
+			no-repeat;
+		background-size: 100px 38px;
+		width: 100px;
+		padding: 0 0 0 0;
+	}
+	.submitShortBtn0_focus, .submitShortBtn0:hover, .submitShortBtn0:active,
+		.submitShortBtn0:focus {
+		background: url("../images/mygovhk/common/btn_01_on@2x.png") 0px 0px
+			no-repeat;
+		background-size: 100px 38px;
+		width: 100px;
+		padding: 0 0 0 0;
+	}
+}
+
+/**************************** loading ****************************/
+.ui-loader-background {
+	background-color: rgba(0, 0, 0, 0.1);
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000,endColorstr=#19000000)";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000,
+		endColorstr=#19000000);
+	background: url(data:image/gif;base64,R0lGODlhAQABAPAAAP) \9;
+	zoom: 1;
+	display: none;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 999999;
+}
+
+.icon-loading {
+	background: url("../images/mygovhk/common/loading002.gif") no-repeat
+		scroll 50% 50%;
+	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgb(255, 255, 255) \9;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 1px 4px #CDCDCD;
+	display: block;
+	height: 130px;
+	width: 130px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 999999;
+}
+
+.ui-loading .ui-loader-background {
+	display: block;
+}
